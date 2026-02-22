@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>College Networking Days — Case Study</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6366f1",
+              "background-light": "#ffffff",
+              "background-dark": "#0a0a0a",
+            },
+            fontFamily: {
+              serif: ["Playfair Display", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply font-sans antialiased text-slate-900 bg-white;
+        }
+        h1,
+        h2,
+        h3 {
+          @apply font-serif;
+        }
+      }
+      .editorial-container {
+        @apply max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24;
+      }
+      .section-spacing {
+        @apply py-24 md:py-32;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100"
+  >
+    <header class="fixed top-0 w-full z-50 mix-blend-difference">
+      <div
+        class="max-w-[1440px] mx-auto px-8 h-24 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <span class="font-serif italic text-2xl text-white">Pradeep.</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-12 text-white">
+          <a
+            class="text-xs uppercase tracking-widest font-medium hover:opacity-60 transition-opacity"
+            href="#"
+            >Work</a
+          >
+          <a
+            class="text-xs uppercase tracking-widest font-medium hover:opacity-60 transition-opacity"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-xs uppercase tracking-widest font-medium hover:opacity-60 transition-opacity"
+            href="#"
+            >Contact</a
+          >
+        </nav>
+        <button
+          class="text-white p-2"
+          onclick="document.documentElement.classList.toggle('dark')"
+        >
+          <span class="material-symbols-outlined !text-[20px]">contrast</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="relative h-screen w-full overflow-hidden flex items-end">
+        <div class="absolute inset-0 z-0">
+          <img
+            alt="Project Hero"
+            class="w-full h-full object-cover scale-105"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1gvh6Qnhm3A-CO6ZXuHuZObT38Q7qnk8ttFEGDiwwplBu2Y-S2M32Pr_MPX6coA3Aov4Gwy_9-hJTLIKAW_HD-1RqnBeRzT33X_DW906gnh5kQ0xW39-AU1mOR1uEsB7-RLm029lM2P_sKN1d45pJQHz5CMpRbdZ4GHd6pxpdVo9XXXkbDNbz_7tLI1eh4PPQoG19fPBx9pVVe-peDxlhmEt_f_gmmvf4lbrU7ayKG3g57RcvdpFvHVrThVZCe2lFqsu_ztSplw"
+          />
+          <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        <div class="relative z-10 w-full pb-24 editorial-container">
+          <div class="max-w-4xl">
+            <span
+              class="text-white/80 uppercase tracking-[0.3em] text-[10px] font-bold mb-6 block"
+              >UX Research &amp; Design</span
+            >
+            <h1
+              class="text-6xl md:text-8xl lg:text-9xl text-white leading-tight mb-8"
+            >
+              College Networking <br />Days
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing editorial-container">
+        <div class="grid lg:grid-cols-12 gap-16">
+          <div class="lg:col-span-4">
+            <div class="sticky top-32 space-y-8">
+              <div>
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold"
+                >
+                  Role
+                </h4>
+                <p class="text-sm">Product Designer</p>
+              </div>
+              <div>
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold"
+                >
+                  Timeline
+                </h4>
+                <p class="text-sm">4 Months</p>
+              </div>
+              <div>
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold"
+                >
+                  Client
+                </h4>
+                <p class="text-sm">Internal University Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-8 space-y-32">
+            <article>
+              <h2 class="text-4xl md:text-5xl mb-10 leading-tight">
+                Bridging the gap between academic learning and industry
+                networking.
+              </h2>
+              <div
+                class="prose prose-slate prose-lg dark:prose-invert max-w-none space-y-6 text-slate-600 dark:text-slate-400"
+              >
+                <p>
+                  Growing up in India, my fascination with art and its potential
+                  to influence lives has been a lifelong passion. This love for
+                  artistic expression led me to explore digital mediums where
+                  technology meets design.
+                </p>
+                <p>
+                  The primary challenge was creating a seamless networking
+                  experience for students who often feel overwhelmed by
+                  professional platforms. We needed to bridge the gap between
+                  academic learning and industry networking without the
+                  intimidation factor.
+                </p>
+              </div>
+            </article>
+            <figure class="bg-slate-50 dark:bg-slate-900 p-8 md:p-16">
+              <img
+                alt="Design Artifact"
+                class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4K91jWGz5jHS5uxMLl8nyhctk_jRHOq950LCgpBbRGdd-yrB4xW7pSpobZzZ-a8iNC8cUtfRIshGw8N13wbD9SwBNcwno8urC3kMRG9990xixXPecjY76lJLizyX2ofYO811mTMPe_M6mUtQ_wq3vvtXgD4jMWM9rPbdKdwJA3qEErXD-JwIxrbgb_zx0geYtTUeeajd7srRhX26lTM87vfuNEVDEMLql4DDO8cLVZDCxZ9D_ELIgWQkvGFT0nNu5BTpboi-cVA"
+              />
+            </figure>
+            <article>
+              <h2
+                class="text-3xl uppercase tracking-widest font-bold mb-16 text-slate-300 dark:text-slate-700"
+              >
+                Process
+              </h2>
+              <div class="space-y-16">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8 items-start"
+                >
+                  <span class="text-4xl font-serif italic text-primary"
+                    >01.</span
+                  >
+                  <div>
+                    <h3 class="text-xl font-bold mb-3">
+                      Discovery &amp; Research
+                    </h3>
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      In-depth user interviews and market analysis to identify
+                      pain points in current student networking habits.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8 items-start"
+                >
+                  <span class="text-4xl font-serif italic text-primary"
+                    >02.</span
+                  >
+                  <div>
+                    <h3 class="text-xl font-bold mb-3">Ideation &amp; Flow</h3>
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      Mapping out the ecosystem and defining the core mechanics
+                      of low-pressure interaction.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8 items-start"
+                >
+                  <span class="text-4xl font-serif italic text-primary"
+                    >03.</span
+                  >
+                  <div>
+                    <h3 class="text-xl font-bold mb-3">Prototyping</h3>
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      Iterative design cycles focusing on a gamified
+                      mobile-first experience.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8 items-start"
+                >
+                  <span class="text-4xl font-serif italic text-primary"
+                    >04.</span
+                  >
+                  <div>
+                    <h3 class="text-xl font-bold mb-3">Validation</h3>
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      Usability testing with 20+ students to refine the matching
+                      algorithm UI.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <figure class="bg-slate-50 dark:bg-slate-900 p-8 md:p-16">
+              <img
+                alt="Interface Design"
+                class="w-full h-auto"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzpaewA8kUA3pGWqE2WwymReT8pldkGMEa6Zd1U_F_C2n6-E1xkGhr3VZVGQFubFEygil0pDA3F7BZ9emYrU6HH_M7gyB7nYNrbGkdqprEV8o4my1iWkK4zf3rULtcNqHWQI_KCN_EM4E4k8jHgc_6Bjj_5-KWT_BftD_Srlx3KH6pzLd2yxjk456YEK4iCD9KRjqBvnUVJGeih5fqfIs36Y1h_eNc3YnYCHUeHCXo6nD_ubYUr5li1kWXLHqbejuW1gL0HeDn1A"
+              />
+            </figure>
+            <article>
+              <h2 class="text-4xl md:text-5xl mb-10 leading-tight">
+                Quantifiable Impact
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div
+                  class="border-l border-slate-200 dark:border-slate-800 pl-8 py-4"
+                >
+                  <span class="block text-4xl font-serif mb-2">40%</span>
+                  <p class="text-sm text-slate-500 uppercase tracking-wider">
+                    Increase in engagement
+                  </p>
+                </div>
+                <div
+                  class="border-l border-slate-200 dark:border-slate-800 pl-8 py-4"
+                >
+                  <span class="block text-4xl font-serif mb-2">200+</span>
+                  <p class="text-sm text-slate-500 uppercase tracking-wider">
+                    Mentorships formed
+                  </p>
+                </div>
+              </div>
+              <p
+                class="mt-12 text-slate-600 dark:text-slate-400 text-lg leading-relaxed"
+              >
+                The project resulted in a significant shift in student
+                confidence. Users reported feeling more prepared to initiate
+                professional conversations, and the mentoring system proved
+                vital for junior student growth.
+              </p>
+            </article>
+            <div class="pt-20 border-t border-slate-100 dark:border-slate-900">
+              <div class="flex flex-wrap gap-x-12 gap-y-6">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400"
+                  >Toolkit</span
+                >
+                <span class="text-sm font-medium">Figma</span>
+                <span class="text-sm font-medium">React.js</span>
+                <span class="text-sm font-medium">Tailwind CSS</span>
+                <span class="text-sm font-medium">Node.js</span>
+                <span class="text-sm font-medium">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="border-t border-slate-100 dark:border-slate-900 mt-20">
+        <a
+          class="group block py-32 editorial-container hover:bg-slate-50 dark:hover:bg-slate-950 transition-colors"
+          href="#"
+        >
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-8"
+          >
+            <div>
+              <span
+                class="text-[10px] uppercase tracking-[0.3em] text-slate-400 mb-4 block"
+                >Up Next</span
+              >
+              <h2
+                class="text-5xl md:text-7xl lg:text-8xl group-hover:italic transition-all duration-500"
+              >
+                EduTech Portal
+              </h2>
+            </div>
+            <div
+              class="w-16 h-16 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all duration-500"
+            >
+              <span class="material-symbols-outlined !text-3xl"
+                >arrow_forward</span
+              >
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer
+      class="py-16 editorial-container border-t border-slate-100 dark:border-slate-900"
+    >
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <p class="text-[10px] uppercase tracking-widest text-slate-400">
+          © 2024 Pradeep — Design Portfolio
+        </p>
+        <div class="flex gap-8">
+          <a
+            class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors"
+            href="#"
+            >LinkedIn</a
+          >
+          <a
+            class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors"
+            href="#"
+            >Dribbble</a
+          >
+          <a
+            class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors"
+            href="#"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

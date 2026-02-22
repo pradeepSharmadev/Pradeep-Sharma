@@ -1,0 +1,623 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Refined Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --deep-indigo: #312e81;
+        --soft-lavender: #eef2ff;
+        --electric-blue: #3b82f6;
+        --accent-purple: #818cf8;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #ffffff;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+      .hero-pattern {
+        background-color: #ffffff;
+        background-image: radial-gradient(#818cf8 0.5px, transparent 0.5px),
+          radial-gradient(#818cf8 0.5px, #ffffff 0.5px);
+        background-size: 20px 20px;
+        background-position:
+          0 0,
+          10px 10px;
+        opacity: 0.1;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .masonry-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      .masonry-item:nth-child(even) {
+        margin-top: 3rem;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <body class="text-slate-900 overflow-x-hidden">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-indigo-50/50"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 group cursor-pointer">
+          <div class="relative w-10 h-10 flex items-center justify-center">
+            <div
+              class="absolute inset-0 bg-indigo-600 rounded-lg rotate-6 group-hover:rotate-0 transition-transform duration-300"
+            ></div>
+            <div
+              class="absolute inset-0 bg-[var(--electric-blue)] rounded-lg -rotate-6 group-hover:rotate-0 transition-transform duration-300 opacity-50"
+            ></div>
+            <span
+              class="material-symbols-outlined text-white relative z-10 text-2xl"
+              >auto_awesome</span
+            >
+          </div>
+          <span
+            class="font-bold text-xl tracking-tight text-[var(--deep-indigo)]"
+            >STUDIO<span class="text-[var(--electric-blue)]">.</span></span
+          >
+        </div>
+        <div
+          class="hidden md:flex items-center gap-10 text-sm font-semibold text-slate-600"
+        >
+          <a
+            class="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--electric-blue)] after:transition-all hover:after:w-full hover:text-[var(--deep-indigo)]"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--electric-blue)] after:transition-all hover:after:w-full hover:text-[var(--deep-indigo)]"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--electric-blue)] after:transition-all hover:after:w-full hover:text-[var(--deep-indigo)]"
+            href="#portfolio"
+            >Portfolio</a
+          >
+          <a
+            class="px-6 py-2.5 bg-[var(--deep-indigo)] text-white rounded-full hover:shadow-lg hover:shadow-indigo-200 transition-all"
+            href="#contact"
+            >Get in Touch</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="relative min-h-screen flex items-center pt-20 overflow-hidden"
+      >
+        <div class="absolute inset-0 hero-pattern"></div>
+        <div
+          class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10"
+        >
+          <div class="space-y-8">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-bold tracking-wider uppercase"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"
+                ></span>
+              </span>
+              Available for projects
+            </div>
+            <div class="space-y-6">
+              <h1
+                class="text-6xl md:text-7xl font-bold leading-tight text-[var(--deep-indigo)]"
+              >
+                Introduction
+              </h1>
+              <p
+                class="text-2xl text-slate-600 serif-font italic leading-relaxed"
+              >
+                Crafting Digital Experiences with Precision and Passion.
+              </p>
+              <p class="text-lg text-slate-500 leading-relaxed max-w-lg">
+                I am a dedicated UI/UX Designer focusing on building clean,
+                user-centric interfaces that solve real-world problems. With a
+                background in both aesthetics and functionality.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-5">
+              <button
+                class="px-10 py-4 bg-gradient-to-r from-[var(--deep-indigo)] to-[var(--accent-purple)] text-white font-bold rounded-full shadow-xl shadow-indigo-200 hover:-translate-y-1 transition-all duration-300"
+              >
+                See Projects
+              </button>
+              <button
+                class="px-10 py-4 bg-white text-[var(--deep-indigo)] border border-slate-200 font-bold rounded-full shadow-sm hover:shadow-md hover:bg-slate-50 transition-all duration-300"
+              >
+                Contacts
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute -top-10 -right-10 w-64 h-64 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"
+            ></div>
+            <div
+              class="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"
+            ></div>
+            <div
+              class="relative aspect-[4/5] bg-slate-200 rounded-[3rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
+            >
+              <img
+                alt="UI/UX Designer at work"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCNZy8xNCByxfG6jYGopgyBzrIVWeZdngzOEpvvLmJAthhVxUK_93hOcTUkc7cnqFGFMtS4tFiyC_q3lTg6b0ZkRGwVvS_Dchlk-0fP6mWklXOUckkARwIJ0-g4-rC9jNiPLwFm5NQjtmVq5ncJT7n8yQVCb9VflhR0m5fFGqXQ9b_vFFCn6lma58xZVKXKzOcBg9AoF95RAVH0upPSiMuzuuG6wsUf91GULFUkma_cWpHkDtHZsSlbhFD0z3MEseMIsg6yF9MIQ"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[var(--deep-indigo)]/40 to-transparent"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-32" id="about">
+        <div class="mb-20 space-y-4">
+          <h2 class="text-5xl font-bold text-[var(--deep-indigo)]">
+            Skill Summary
+          </h2>
+          <div
+            class="w-24 h-1.5 bg-gradient-to-r from-[var(--electric-blue)] to-[var(--soft-lavender)] rounded-full"
+          ></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="glass-card p-10 rounded-[2.5rem] shadow-2xl shadow-slate-100/50 hover:-translate-y-2 transition-all duration-500 group"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-indigo-200 group-hover:rotate-12 transition-transform"
+            >
+              <span class="material-symbols-outlined text-3xl">brush</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-[var(--deep-indigo)]">
+              UI/UX Design
+            </h3>
+            <p class="text-slate-500 mb-8 leading-relaxed">
+              Designing intuitive user interfaces and experiences with a focus
+              on accessibility and modern visual trends.
+            </p>
+            <button
+              class="text-[var(--electric-blue)] font-bold flex items-center gap-2 group/btn"
+            >
+              Learn More
+              <span
+                class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+          <div
+            class="glass-card p-10 rounded-[2.5rem] shadow-2xl shadow-slate-100/50 hover:-translate-y-2 transition-all duration-500 group border-indigo-100"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-blue-200 group-hover:rotate-12 transition-transform"
+            >
+              <span class="material-symbols-outlined text-3xl">code</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-[var(--deep-indigo)]">
+              Front-end
+            </h3>
+            <p class="text-slate-500 mb-8 leading-relaxed">
+              Bridging the gap between design and reality using modern web
+              technologies like React, Tailwind, and CSS animations.
+            </p>
+            <button
+              class="text-[var(--electric-blue)] font-bold flex items-center gap-2 group/btn"
+            >
+              Learn More
+              <span
+                class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+          <div
+            class="glass-card p-10 rounded-[2.5rem] shadow-2xl shadow-slate-100/50 hover:-translate-y-2 transition-all duration-500 group"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-slate-700 to-indigo-900 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-indigo-200 group-hover:rotate-12 transition-transform"
+            >
+              <span class="material-symbols-outlined text-3xl">terminal</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-[var(--deep-indigo)]">
+              Back-end
+            </h3>
+            <p class="text-slate-500 mb-8 leading-relaxed">
+              Implementing robust server-side logic and database architecture to
+              power complex applications.
+            </p>
+            <button
+              class="text-[var(--electric-blue)] font-bold flex items-center gap-2 group/btn"
+            >
+              Learn More
+              <span
+                class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-32" id="portfolio">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6"
+        >
+          <div class="space-y-4">
+            <h2 class="text-5xl font-bold text-[var(--deep-indigo)]">
+              Featured Projects
+            </h2>
+            <div
+              class="w-24 h-1.5 bg-gradient-to-r from-[var(--electric-blue)] to-[var(--soft-lavender)] rounded-full"
+            ></div>
+          </div>
+          <div class="flex gap-4">
+            <button
+              class="w-14 h-14 rounded-full border border-slate-200 flex items-center justify-center hover:bg-[var(--deep-indigo)] hover:text-white transition-all duration-300"
+            >
+              <span class="material-symbols-outlined">west</span>
+            </button>
+            <button
+              class="w-14 h-14 rounded-full border border-slate-200 flex items-center justify-center hover:bg-[var(--deep-indigo)] hover:text-white transition-all duration-300"
+            >
+              <span class="material-symbols-outlined">east</span>
+            </button>
+          </div>
+        </div>
+        <div class="masonry-grid">
+          <div
+            class="masonry-item group relative overflow-hidden rounded-[2rem] bg-white shadow-xl"
+          >
+            <div class="aspect-[4/3] overflow-hidden">
+              <img
+                alt="Project"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgw1afXfrNxf62ITPeXVRrSHWj7aZgUzG7FbdIsb-znGW2-WyRrF3q3mZ780TIxe6MKKMiPqPfW_avtl-K7Hvpy80EHtnnd3Ne9p0jI3Md4mztoeIV1gzPfYhNQ0eAOJWxnMaG68-k9Ft7pDSebN3z-LO8ZmtgDxeI-v2SxIRR9yVrqYM8cRt_a3HpEUTRHEoAnlg4JqBKUODXfH7hNTFCUbWPX1q-bHX2xKZGoYl06d8dcwQvhCIAvo00ezFCnuQQlzf3Gjj8og"
+              />
+            </div>
+            <div class="p-8 space-y-4">
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-indigo-50 text-[var(--deep-indigo)] text-[10px] font-bold uppercase rounded-full tracking-widest"
+                  >Healthcare</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-[var(--electric-blue)] text-[10px] font-bold uppercase rounded-full tracking-widest"
+                  >Mobile App</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold text-[var(--deep-indigo)]">
+                Health Platform
+              </h3>
+              <p class="text-slate-500 text-sm">
+                A holistic approach to personal wellness tracking and expert
+                consultations.
+              </p>
+              <button
+                class="px-6 py-2.5 bg-slate-900 text-white rounded-xl text-sm font-semibold hover:bg-[var(--deep-indigo)] transition-colors"
+              >
+                Try it
+              </button>
+            </div>
+          </div>
+          <div
+            class="masonry-item group relative overflow-hidden rounded-[2rem] h-[500px]"
+          >
+            <img
+              alt="Project"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwH2tT53qoevWt9XcnP3uo1A2N5mL3k1-TffQRQ9ydmUCr4q7H4yMRZD-C8Nbp-XwttnTBcK_ohkJiC97FjtNNL-0QMMlWaiuMiJNWNhEOKKuXDEJvFP8mp0PvV29mOi5acWQNBSpjEuBJDmY_PLDabwtKdR2i5fg_DzI039KOQFy0tz0qS97LzWHU64UHVjnOUN44QQax2kqa1zZhm_KpTYLMkn74J54MG8aHU1n5ISYPNuhwpATWLY0h7l5kbz5cttpdsu0c8g"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[var(--deep-indigo)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10 text-white"
+            >
+              <div class="flex gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-[10px] font-bold uppercase rounded-full tracking-widest"
+                  >Finance</span
+                >
+              </div>
+              <h3 class="text-3xl font-bold mb-2">Finance Tracker</h3>
+              <p class="text-indigo-100 mb-6 max-w-sm">
+                Managing personal finances has never been easier with this
+                integrated dashboard.
+              </p>
+              <button
+                class="w-fit px-8 py-3 bg-white text-[var(--deep-indigo)] rounded-full font-bold hover:shadow-lg transition-all"
+              >
+                Launch Project
+              </button>
+            </div>
+          </div>
+          <div
+            class="masonry-item group relative overflow-hidden rounded-[2rem] h-[500px]"
+          >
+            <img
+              alt="Project"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG5u3p2X4LA-1mRyDpJalYRNWpTiRuI9zDKwxOh8HdCzZeil2zh5221rKauGgvF3KZq6OyaTOsAIKflDttOAFvwCxuT8WNb5u8wKD58vsczPU452WSOAj3MnCJl_f_qqeDlZUNv7X6Wl9oGZllMPZoquueKPIj1dafA239uVHLQxakVHvcXh0sW-6gzkQ4W6V08-Dc9YBWMTeLtS8MP7I6BS7KOBIO2nRoY_Fni0N05tdBTcF-pai2o05S9c0vccoCaSUYdO775A"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[var(--electric-blue)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10 text-white"
+            >
+              <div class="flex gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-white/20 backdrop-blur-md text-white text-[10px] font-bold uppercase rounded-full tracking-widest"
+                  >Travel</span
+                >
+              </div>
+              <h3 class="text-3xl font-bold mb-2">Travel Explorer</h3>
+              <p class="text-blue-50 mb-6 max-w-sm">
+                Discover hidden gems around the world with community-driven
+                travel guides.
+              </p>
+              <button
+                class="w-fit px-8 py-3 bg-white text-[var(--electric-blue)] rounded-full font-bold hover:shadow-lg transition-all"
+              >
+                Launch Project
+              </button>
+            </div>
+          </div>
+          <div
+            class="masonry-item group relative overflow-hidden rounded-[2rem] bg-white shadow-xl"
+          >
+            <div class="aspect-[4/3] overflow-hidden">
+              <img
+                alt="Project"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuChAaw5QRBG3NeZSgDKZ-TDd7mfuVZfoNrOLRFch_7lbIWpfzcs0Lm--D2Y6CiGjB600i0arQBkZXnBhLK-BkLIDsddNNq6OKORoMQBenlvd8eAlXQiZQEh6_xZE7fuKCtXUx75TNkeOb2fJyz51B1ZSZkFxez2sEedEQ_qomCz_WUfiTzvgRS4A7ohf1Oog0hddHjFZ41zagzTM66LQVzVCAYxB1gQ7KZFtW4bwVxv2q3MtDyYX2-8EW7VImBJK-BGW_58wVxnPA"
+              />
+            </div>
+            <div class="p-8 space-y-4">
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-indigo-50 text-[var(--deep-indigo)] text-[10px] font-bold uppercase rounded-full tracking-widest"
+                  >Web Design</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold text-[var(--deep-indigo)]">
+                Dev Portfolio
+              </h3>
+              <p class="text-slate-500 text-sm">
+                A highly customizable portfolio template for developers and
+                creators.
+              </p>
+              <button
+                class="px-6 py-2.5 bg-slate-900 text-white rounded-xl text-sm font-semibold hover:bg-[var(--deep-indigo)] transition-colors"
+              >
+                Try it
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="max-w-7xl mx-auto px-6 py-32 bg-[var(--soft-lavender)]/30 rounded-[4rem]"
+      >
+        <div class="text-center mb-20 space-y-4">
+          <h2 class="text-5xl font-bold text-[var(--deep-indigo)]">
+            Kind Words
+          </h2>
+          <div
+            class="w-24 h-1.5 bg-[var(--electric-blue)] mx-auto rounded-full"
+          ></div>
+        </div>
+        <div
+          class="relative max-w-4xl mx-auto flex items-center justify-center"
+        >
+          <div
+            class="bg-white p-12 md:p-20 rounded-[3rem] shadow-2xl shadow-indigo-100/50 relative text-center"
+          >
+            <div
+              class="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full border-8 border-white overflow-hidden shadow-xl"
+            >
+              <img
+                alt="Client"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIjQslx4eNgDILm4Jbheb068RZch6QnO6Qt4kUhsEx4kE6diEB8_TtDQrih6oY04GUJWI4hVTJerU2Ao26xMSmsawXcBdcsaGsG0kfNC7jtksi0bpdRyFJLm5c3Ri8LXp4Lq7u2p6S1xfmlCWaJDBvWkRo8sxWuAdZoqBfG0XrFYHmqMcx4pz-rSoDrpwrhqM_CXJH2mSrm8AQJcBDt1GHcIkIOw7cOH6k478SIA-YLtgQsLEUslLM5ZlrVDb7vaWLqiXtmnRvug"
+              />
+            </div>
+            <div class="mt-8">
+              <span
+                class="material-symbols-outlined text-6xl text-indigo-200 mb-6"
+                >format_quote</span
+              >
+              <p
+                class="text-2xl text-slate-700 leading-relaxed italic mb-10 serif-font"
+              >
+                "Their attention to detail and ability to translate complex
+                requirements into beautiful, functional designs is unmatched.
+                Working together was a seamless and highly productive
+                experience."
+              </p>
+              <div>
+                <h4 class="text-2xl font-bold text-[var(--deep-indigo)]">
+                  Jonathan Doe
+                </h4>
+                <p
+                  class="text-[var(--electric-blue)] font-bold tracking-widest text-xs uppercase mt-2"
+                >
+                  Product Manager at TechNova
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-32" id="contact">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+          <div class="space-y-8">
+            <h2 class="text-6xl font-bold text-[var(--deep-indigo)]">
+              Let's create something<br /><span
+                class="text-[var(--electric-blue)] serif-font italic font-normal"
+                >extraordinary</span
+              >
+              together.
+            </h2>
+            <p class="text-xl text-slate-500 max-w-md leading-relaxed">
+              Have a project in mind? Reach out and let's discuss how we can
+              bring your vision to life.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 group cursor-pointer">
+                <div
+                  class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-[var(--deep-indigo)] group-hover:bg-[var(--deep-indigo)] group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <span class="font-bold text-lg">hello@studio.design</span>
+              </div>
+            </div>
+          </div>
+          <form
+            class="space-y-6 bg-white p-10 rounded-[2.5rem] shadow-2xl border border-slate-50"
+          >
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label
+                  class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1"
+                  >Name</label
+                >
+                <input
+                  class="w-full bg-slate-50 border-transparent focus:bg-white focus:ring-2 focus:ring-[var(--electric-blue)] rounded-2xl py-4 px-6 transition-all"
+                  placeholder="John Doe"
+                  type="text"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1"
+                  >Email</label
+                >
+                <input
+                  class="w-full bg-slate-50 border-transparent focus:bg-white focus:ring-2 focus:ring-[var(--electric-blue)] rounded-2xl py-4 px-6 transition-all"
+                  placeholder="john@example.com"
+                  type="email"
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1"
+                >Message</label
+              >
+              <textarea
+                class="w-full bg-slate-50 border-transparent focus:bg-white focus:ring-2 focus:ring-[var(--electric-blue)] rounded-2xl py-4 px-6 transition-all"
+                placeholder="Tell me about your project..."
+                rows="5"
+              ></textarea>
+            </div>
+            <button
+              class="w-full py-5 bg-[var(--deep-indigo)] text-white font-bold rounded-2xl hover:shadow-2xl hover:shadow-indigo-200 transition-all flex items-center justify-center gap-3"
+              type="submit"
+            >
+              Send Message
+              <span class="material-symbols-outlined text-xl">send</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[var(--deep-indigo)] text-white pt-24 pb-12 overflow-hidden relative"
+    >
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-800 rounded-full opacity-50"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="flex flex-col items-center text-center mb-20 space-y-10">
+          <h3 class="text-5xl md:text-6xl font-bold serif-font italic">
+            Thank You for visiting
+          </h3>
+          <div class="flex gap-6">
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#0077b5] transition-all group"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#ea4c89] transition-all group"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 24c-6.627 0-12-5.373-12-12s5.373-12 12-12 12 5.373 12 12-5.373 12-12 12zm0-2c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm0-16.5c2.481 0 4.5 2.019 4.5 4.5 0 1.233-.501 2.348-1.31 3.155-.008.007-.015.014-.022.022-.806.81-1.923 1.323-3.168 1.323s-2.361-.513-3.167-1.322c-.007-.008-.014-.015-.022-.022-.81-.807-1.311-1.922-1.311-3.156 0-2.481 2.019-4.5 4.5-4.5z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#E1306C] transition-all group"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-3 items-center gap-10 pt-16 border-t border-white/10"
+        >
+          <div class="text-left font-bold text-2xl serif-font italic">
+            Studio<span class="text-[var(--electric-blue)]">.</span>
+          </div>
+          <div class="flex justify-center gap-8 text-sm font-medium opacity-70">
+            <a class="hover:opacity-100 transition-opacity" href="#"
+              >Projects</a
+            >
+            <a class="hover:opacity-100 transition-opacity" href="#"
+              >Services</a
+            >
+            <a class="hover:opacity-100 transition-opacity" href="#">Privacy</a>
+          </div>
+          <div class="text-right text-sm opacity-50">
+            © 2024 UI/UX Designer Portfolio. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

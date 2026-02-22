@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Pradeep | UI/UX Designer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --deep-indigo: #312e81;
+        --soft-lavender: #eef2ff;
+        --electric-blue: #3b82f6;
+        --accent-purple: #818cf8;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #ffffff;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+      .hero-pattern {
+        background-color: #ffffff;
+        background-image: radial-gradient(#818cf8 0.5px, transparent 0.5px),
+          radial-gradient(#818cf8 0.5px, #ffffff 0.5px);
+        background-size: 20px 20px;
+        background-position:
+          0 0,
+          10px 10px;
+        opacity: 0.1;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -9px;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--deep-indigo);
+        border: 4px solid var(--soft-lavender);
+      }
+      .timeline-container {
+        border-left: 2px solid var(--soft-lavender);
+      }
+    </style>
+  </head>
+  <body class="text-slate-900 overflow-x-hidden">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-indigo-50/50"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 group cursor-pointer">
+          <div class="relative w-10 h-10 flex items-center justify-center">
+            <div
+              class="absolute inset-0 bg-indigo-600 rounded-lg rotate-6 group-hover:rotate-0 transition-transform duration-300"
+            ></div>
+            <div
+              class="absolute inset-0 bg-[var(--electric-blue)] rounded-lg -rotate-6 group-hover:rotate-0 transition-transform duration-300 opacity-50"
+            ></div>
+            <span
+              class="material-symbols-outlined text-white relative z-10 text-2xl"
+              >auto_awesome</span
+            >
+          </div>
+          <span
+            class="font-bold text-xl tracking-tight text-[var(--deep-indigo)] uppercase"
+            >Pradeep<span class="text-[var(--electric-blue)]">.</span></span
+          >
+        </div>
+        <div
+          class="hidden md:flex items-center gap-10 text-sm font-semibold text-slate-600"
+        >
+          <a
+            class="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--electric-blue)] after:transition-all hover:after:w-full hover:text-[var(--deep-indigo)]"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="relative py-1 text-[var(--deep-indigo)] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-[var(--electric-blue)]"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-[var(--electric-blue)] after:transition-all hover:after:w-full hover:text-[var(--deep-indigo)]"
+            href="#portfolio"
+            >Portfolio</a
+          >
+          <a
+            class="px-6 py-2.5 bg-[var(--deep-indigo)] text-white rounded-full hover:shadow-lg hover:shadow-indigo-200 transition-all"
+            href="#contact"
+            >Get in Touch</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden"
+      >
+        <div class="absolute inset-0 hero-pattern"></div>
+        <div
+          class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10"
+        >
+          <div class="relative order-2 md:order-1">
+            <div
+              class="absolute -top-10 -left-10 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"
+            ></div>
+            <div
+              class="relative aspect-[4/5] bg-slate-200 rounded-[3rem] overflow-hidden shadow-2xl"
+            >
+              <img
+                alt="Pradeep - Professional Portrait"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCNZy8xNCByxfG6jYGopgyBzrIVWeZdngzOEpvvLmJAthhVxUK_93hOcTUkc7cnqFGFMtS4tFiyC_q3lTg6b0ZkRGwVvS_Dchlk-0fP6mWklXOUckkARwIJ0-g4-rC9jNiPLwFm5NQjtmVq5ncJT7n8yQVCb9VflhR0m5fFGqXQ9b_vFFCn6lma58xZVKXKzOcBg9AoF95RAVH0upPSiMuzuuG6wsUf91GULFUkma_cWpHkDtHZsSlbhFD0z3MEseMIsg6yF9MIQ"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[var(--deep-indigo)]/40 to-transparent"
+              ></div>
+            </div>
+          </div>
+          <div class="space-y-8 order-1 md:order-2">
+            <div class="space-y-4">
+              <h1
+                class="text-7xl md:text-8xl font-bold leading-tight text-[var(--deep-indigo)]"
+              >
+                About Me
+              </h1>
+              <div
+                class="w-24 h-2 bg-[var(--electric-blue)] rounded-full"
+              ></div>
+            </div>
+            <p
+              class="text-3xl text-slate-700 serif-font italic leading-relaxed"
+            >
+              "My journey is defined by the intersection of human empathy and
+              digital innovation."
+            </p>
+            <p class="text-lg text-slate-500 leading-relaxed max-w-xl">
+              Based in Bangalore, I specialize in crafting seamless digital
+              experiences that bridge the gap between user needs and business
+              goals. With over 8 years in the design industry, I focus on
+              scalable systems and high-fidelity aesthetics.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="px-8 py-4 bg-[var(--deep-indigo)] text-white font-bold rounded-full shadow-xl hover:-translate-y-1 transition-all"
+                href="#experience"
+                >View Experience</a
+              >
+              <a
+                class="px-8 py-4 border border-slate-200 text-[var(--deep-indigo)] font-bold rounded-full hover:bg-slate-50 transition-all"
+                href="#values"
+                >Core Values</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-slate-50 py-32">
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="space-y-12">
+            <h2 class="text-4xl font-bold text-[var(--deep-indigo)]">
+              The Philosophy
+            </h2>
+            <div class="prose prose-lg text-slate-600 max-w-none space-y-6">
+              <p class="text-xl leading-relaxed">
+                I believe that great design is invisible. It’s the silent guide
+                that helps a user achieve their goal without friction. My
+                approach combines rigorous user research with a meticulous eye
+                for typography, layout, and motion.
+              </p>
+              <p class="text-xl leading-relaxed">
+                Starting my career as a visual artist, I quickly realized that
+                beauty without utility is hollow. This led me to pivot into
+                UI/UX, where I could apply my aesthetic sensibilities to solve
+                complex functional problems. Today, I lead design initiatives
+                that impact millions of users globally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-32" id="experience">
+        <div class="grid md:grid-cols-3 gap-16">
+          <div class="md:col-span-1">
+            <h2 class="text-5xl font-bold text-[var(--deep-indigo)] mb-6">
+              Career Journey
+            </h2>
+            <p class="text-slate-500 text-lg">
+              A chronicle of my professional evolution from a design student to
+              a lead product designer.
+            </p>
+          </div>
+          <div
+            class="md:col-span-2 space-y-12 timeline-container pl-10 relative"
+          >
+            <div class="relative timeline-item pb-12">
+              <span
+                class="text-sm font-bold text-[var(--electric-blue)] tracking-widest uppercase"
+                >2021 — Present</span
+              >
+              <h3 class="text-2xl font-bold text-[var(--deep-indigo)] mt-2">
+                Senior Product Designer at Google
+              </h3>
+              <p class="text-slate-500 mt-4 leading-relaxed">
+                Leading the design system for workspace productivity tools,
+                focusing on cross-platform consistency and accessibility for
+                over 100 million users.
+              </p>
+            </div>
+            <div class="relative timeline-item pb-12">
+              <span
+                class="text-sm font-bold text-[var(--electric-blue)] tracking-widest uppercase"
+                >2018 — 2021</span
+              >
+              <h3 class="text-2xl font-bold text-[var(--deep-indigo)] mt-2">
+                UI/UX Consultant (Freelance)
+              </h3>
+              <p class="text-slate-500 mt-4 leading-relaxed">
+                Collaborated with global startups in Fintech and HealthTech to
+                build MVPs from scratch, securing a total of $50M in Series A
+                funding for clients.
+              </p>
+            </div>
+            <div class="relative timeline-item pb-12">
+              <span
+                class="text-sm font-bold text-[var(--electric-blue)] tracking-widest uppercase"
+                >2015 — 2018</span
+              >
+              <h3 class="text-2xl font-bold text-[var(--deep-indigo)] mt-2">
+                Junior Designer at Creative Pulse
+              </h3>
+              <p class="text-slate-500 mt-4 leading-relaxed">
+                Mastered the fundamentals of visual design, brand identity, and
+                interactive web layouts for premium lifestyle brands.
+              </p>
+            </div>
+            <div class="relative timeline-item">
+              <span
+                class="text-sm font-bold text-[var(--electric-blue)] tracking-widest uppercase"
+                >2011 — 2015</span
+              >
+              <h3 class="text-2xl font-bold text-[var(--deep-indigo)] mt-2">
+                Bachelor of Design
+              </h3>
+              <p class="text-slate-500 mt-4 leading-relaxed">
+                Specialized in Interaction Design at the National Institute of
+                Design. Graduated with honors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[var(--soft-lavender)]/30 py-32">
+        <div class="max-w-7xl mx-auto px-6">
+          <h2
+            class="text-4xl font-bold text-[var(--deep-indigo)] mb-16 text-center"
+          >
+            Education &amp; Recognition
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl">
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-[var(--deep-indigo)] mb-6"
+              >
+                <span class="material-symbols-outlined">school</span>
+              </div>
+              <h4 class="font-bold text-xl mb-2">B.Des in Interaction</h4>
+              <p class="text-slate-500 text-sm">
+                National Institute of Design, 2015
+              </p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl">
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-[var(--deep-indigo)] mb-6"
+              >
+                <span class="material-symbols-outlined">verified</span>
+              </div>
+              <h4 class="font-bold text-xl mb-2">Google UX Certificate</h4>
+              <p class="text-slate-500 text-sm">
+                Professional Specialization, 2021
+              </p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl">
+              <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-[var(--deep-indigo)] mb-6"
+              >
+                <span class="material-symbols-outlined">workspace_premium</span>
+              </div>
+              <h4 class="font-bold text-xl mb-2">Interaction Design Org</h4>
+              <p class="text-slate-500 text-sm">
+                Human-Computer Interaction, 2019
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-6 py-32" id="values">
+        <div class="text-center mb-20">
+          <h2 class="text-5xl font-bold text-[var(--deep-indigo)] mb-4">
+            My Core Values
+          </h2>
+          <div
+            class="w-24 h-1.5 bg-[var(--electric-blue)] mx-auto rounded-full"
+          ></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="text-center space-y-6">
+            <div
+              class="w-20 h-20 mx-auto bg-indigo-50 rounded-full flex items-center justify-center text-[var(--deep-indigo)]"
+            >
+              <span class="material-symbols-outlined text-4xl">group</span>
+            </div>
+            <h3 class="text-2xl font-bold">User-Centricity</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Placing the user at the heart of every decision, ensuring every
+              pixel serves a purpose for the person on the other side of the
+              screen.
+            </p>
+          </div>
+          <div class="text-center space-y-6">
+            <div
+              class="w-20 h-20 mx-auto bg-indigo-50 rounded-full flex items-center justify-center text-[var(--deep-indigo)]"
+            >
+              <span class="material-symbols-outlined text-4xl"
+                >auto_fix_high</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold">Clean Aesthetics</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Believing in the power of simplicity. Removing the noise to reveal
+              the essence of the product through refined visual language.
+            </p>
+          </div>
+          <div class="text-center space-y-6">
+            <div
+              class="w-20 h-20 mx-auto bg-indigo-50 rounded-full flex items-center justify-center text-[var(--deep-indigo)]"
+            >
+              <span class="material-symbols-outlined text-4xl">layers</span>
+            </div>
+            <h3 class="text-2xl font-bold">Scalability</h3>
+            <p class="text-slate-500 leading-relaxed">
+              Designing with the future in mind. Creating robust systems that
+              grow and adapt alongside the products and businesses they support.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[var(--deep-indigo)] text-white pt-24 pb-12 overflow-hidden relative"
+    >
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-800 rounded-full opacity-50"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="flex flex-col items-center text-center mb-20 space-y-10">
+          <h3 class="text-5xl md:text-6xl font-bold serif-font italic">
+            Thank You for visiting
+          </h3>
+          <div class="flex gap-6">
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#0077b5] transition-all"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#ea4c89] transition-all"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 24c-6.627 0-12-5.373-12-12s5.373-12 12-12 12 5.373 12 12-5.373 12-12 12zm0-2c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm0-16.5c2.481 0 4.5 2.019 4.5 4.5 0 1.233-.501 2.348-1.31 3.155-.008.007-.015.014-.022.022-.806.81-1.923 1.323-3.168 1.323s-2.361-.513-3.167-1.322c-.007-.008-.014-.015-.022-.022-.81-.807-1.311-1.922-1.311-3.156 0-2.481 2.019-4.5 4.5-4.5z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#E1306C] transition-all"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-3 items-center gap-10 pt-16 border-t border-white/10"
+        >
+          <div class="text-left font-bold text-2xl serif-font italic">
+            PRADEEP<span class="text-[var(--electric-blue)]">.</span>
+          </div>
+          <div class="flex justify-center gap-8 text-sm font-medium opacity-70">
+            <a class="hover:opacity-100 transition-opacity" href="#"
+              >Projects</a
+            >
+            <a class="hover:opacity-100 transition-opacity" href="#">About</a>
+            <a class="hover:opacity-100 transition-opacity" href="#">Contact</a>
+          </div>
+          <div class="text-right text-sm opacity-50">
+            © 2024 Pradeep's Design Portfolio. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

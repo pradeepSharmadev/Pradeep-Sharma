@@ -1,0 +1,564 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Project Case Study - College Networking Days</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6366f1", // Modern Vibrant Indigo/Purple
+              "background-light": "#ffffff",
+              "background-dark": "#0f172a",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              xl: "1rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      :root {
+        --deep-indigo: #312e81;
+        --soft-lavender: #eef2ff;
+        --electric-blue: #3b82f6;
+        --accent-purple: #818cf8;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .hero-gradient {
+        background: linear-gradient(
+          to bottom,
+          #f3f4f6 0%,
+          #f3f4f6 70%,
+          transparent 70%,
+          transparent 100%
+        );
+      }
+      .dark .hero-gradient {
+        background: linear-gradient(
+          to bottom,
+          #1e293b 0%,
+          #1e293b 70%,
+          transparent 70%,
+          transparent 100%
+        );
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300"
+  >
+    <header
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white"
+          >
+            <span class="material-icons-outlined">adjust</span>
+          </div>
+          <span class="font-bold text-xl tracking-tight">PORTFOLIO</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#"
+            >About</a
+          >
+          <a class="text-sm font-medium text-primary" href="#">Portfolio</a>
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#"
+            >Contacts</a
+          >
+        </nav>
+        <button
+          class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          onclick="document.documentElement.classList.toggle('dark')"
+        >
+          <span class="material-icons-outlined dark:hidden">dark_mode</span>
+          <span class="material-icons-outlined hidden dark:block"
+            >light_mode</span
+          >
+        </button>
+      </div>
+    </header>
+    <main class="pt-20">
+      <section class="hero-gradient pt-20 pb-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+          <h1
+            class="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-slate-800 dark:text-white"
+          >
+            College networking days
+          </h1>
+          <a
+            class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all active:scale-95 mb-16"
+            href="#"
+          >
+            Visit Project
+          </a>
+          <div class="relative max-w-5xl mx-auto">
+            <div
+              class="aspect-video bg-slate-200 dark:bg-slate-800 rounded-2xl shadow-2xl overflow-hidden border border-white/20 dark:border-slate-700/50"
+            >
+              <img
+                alt="Project Hero Mockup"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1gvh6Qnhm3A-CO6ZXuHuZObT38Q7qnk8ttFEGDiwwplBu2Y-S2M32Pr_MPX6coA3Aov4Gwy_9-hJTLIKAW_HD-1RqnBeRzT33X_DW906gnh5kQ0xW39-AU1mOR1uEsB7-RLm029lM2P_sKN1d45pJQHz5CMpRbdZ4GHd6pxpdVo9XXXkbDNbz_7tLI1eh4PPQoG19fPBx9pVVe-peDxlhmEt_f_gmmvf4lbrU7ayKG3g57RcvdpFvHVrThVZCe2lFqsu_ztSplw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto space-y-16">
+          <article>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+              <span class="w-8 h-1 bg-primary rounded-full"></span>
+              Overview
+            </h2>
+            <div
+              class="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed text-lg"
+            >
+              <p>
+                Growing up in India, my fascination with art and its potential
+                to influence lives has been a lifelong passion. I began
+                sketching and painting at the age of eight, and this love for
+                artistic expression led me to explore digital mediums where
+                technology meets design.
+              </p>
+              <p>
+                With a focus on experience design and business strategy, I have
+                developed strong skills in design research, concept development,
+                prototyping, and user testing. My objective has always been to
+                unify the team with a shared vision and deliver impactful
+                user-centric solutions.
+              </p>
+            </div>
+          </article>
+          <article>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+              <span class="w-8 h-1 bg-primary rounded-full"></span>
+              Challenges and solution
+            </h2>
+            <div
+              class="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed text-lg"
+            >
+              <p>
+                The primary challenge was creating a seamless networking
+                experience for students who often feel overwhelmed by
+                professional platforms. We needed to bridge the gap between
+                academic learning and industry networking without the
+                intimidation factor.
+              </p>
+              <p>
+                Our solution involved a gamified networking interface that
+                encouraged interaction through shared interests and low-pressure
+                conversation starters. We implemented a robust mentoring system
+                that paired seniors with juniors based on skill sets and career
+                goals.
+              </p>
+            </div>
+          </article>
+          <article>
+            <h2 class="text-2xl font-bold mb-12 flex items-center gap-2">
+              <span class="w-8 h-1 bg-primary rounded-full"></span>
+              Design Process
+            </h2>
+            <div class="relative">
+              <div
+                class="absolute top-1/2 left-0 w-full h-0.5 border-t-2 border-dashed border-primary/30 -translate-y-1/2 hidden md:block"
+              ></div>
+              <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center z-10 mb-4 shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >search</span
+                    >
+                  </div>
+                  <div class="space-y-2">
+                    <h3 class="font-bold text-slate-900 dark:text-white">
+                      Research
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Conducting user interviews and market analysis to identify
+                      pain points.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center z-10 mb-4 shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >lightbulb</span
+                    >
+                  </div>
+                  <div class="space-y-2">
+                    <h3 class="font-bold text-slate-900 dark:text-white">
+                      Ideation
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Brainstorming solutions and creating initial user flow
+                      diagrams.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center z-10 mb-4 shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >draw</span
+                    >
+                  </div>
+                  <div class="space-y-2">
+                    <h3 class="font-bold text-slate-900 dark:text-white">
+                      Prototyping
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Building high-fidelity interactive mockups using Figma.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center z-10 mb-4 shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >fact_check</span
+                    >
+                  </div>
+                  <div class="space-y-2">
+                    <h3 class="font-bold text-slate-900 dark:text-white">
+                      Testing
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Validating the design with real users and iterating on
+                      feedback.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-12 h-12 bg-white dark:bg-slate-800 border-2 border-primary rounded-full flex items-center justify-center z-10 mb-4 shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >rocket_launch</span
+                    >
+                  </div>
+                  <div class="space-y-2">
+                    <h3 class="font-bold text-slate-900 dark:text-white">
+                      Launch
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      Final handoff and deployment of the networking platform.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+              <span class="w-8 h-1 bg-primary rounded-full"></span>
+              Technologies used
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div
+                class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl text-center font-medium hover:border-primary hover:text-primary transition-colors cursor-default"
+              >
+                Figma
+              </div>
+              <div
+                class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl text-center font-medium hover:border-primary hover:text-primary transition-colors cursor-default"
+              >
+                React.js
+              </div>
+              <div
+                class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl text-center font-medium hover:border-primary hover:text-primary transition-colors cursor-default"
+              >
+                Tailwind CSS
+              </div>
+              <div
+                class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl text-center font-medium hover:border-primary hover:text-primary transition-colors cursor-default"
+              >
+                Node.js
+              </div>
+              <div
+                class="p-4 border border-slate-200 dark:border-slate-800 rounded-xl text-center font-medium hover:border-primary hover:text-primary transition-colors cursor-default"
+              >
+                Firebase
+              </div>
+            </div>
+          </article>
+          <article>
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+              <span class="w-8 h-1 bg-primary rounded-full"></span>
+              Outcomes
+            </h2>
+            <div
+              class="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed text-lg"
+            >
+              <p>
+                The project resulted in a 40% increase in student engagement
+                during campus networking events. Users reported feeling more
+                confident in initiating professional conversations, and over 200
+                mentor-mentee connections were established within the first
+                month of launch.
+              </p>
+            </div>
+          </article>
+          <div class="pt-8">
+            <a
+              class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all active:scale-95"
+              href="#"
+            >
+              Visit Live Demo
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 bg-slate-50 dark:bg-slate-900/50 px-6">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-16">Other Projects</h2>
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div
+              class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700"
+            >
+              <div
+                class="aspect-video bg-slate-200 dark:bg-slate-700 relative overflow-hidden"
+              >
+                <img
+                  alt="Mobile App Design"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4K91jWGz5jHS5uxMLl8nyhctk_jRHOq950LCgpBbRGdd-yrB4xW7pSpobZzZ-a8iNC8cUtfRIshGw8N13wbD9SwBNcwno8urC3kMRG9990xixXPecjY76lJLizyX2ofYO811mTMPe_M6mUtQ_wq3vvtXgD4jMWM9rPbdKdwJA3qEErXD-JwIxrbgb_zx0geYtTUeeajd7srRhX26lTM87vfuNEVDEMLql4DDO8cLVZDCxZ9D_ELIgWQkvGFT0nNu5BTpboi-cVA"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold mb-2 group-hover:text-primary transition-colors"
+                >
+                  EduTech Portal
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                  A comprehensive learning management system for higher
+                  education institutions.
+                </p>
+                <div class="flex gap-3">
+                  <a
+                    class="flex-1 text-center py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:brightness-110 transition-all"
+                    href="#"
+                    >Overview</a
+                  >
+                  <a
+                    class="flex-1 text-center py-2 border border-slate-200 dark:border-slate-700 text-sm font-semibold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+                    href="#"
+                    >Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700"
+            >
+              <div
+                class="aspect-video bg-slate-200 dark:bg-slate-700 relative overflow-hidden"
+              >
+                <img
+                  alt="Dashboard Design"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzpaewA8kUA3pGWqE2WwymReT8pldkGMEa6Zd1U_F_C2n6-E1xkGhr3VZVGQFubFEygil0pDA3F7BZ9emYrU6HH_M7gyB7nYNrbGkdqprEV8o4my1iWkK4zf3rULtcNqHWQI_KCN_EM4E4k8jHgc_6Bjj_5-KWT_BftD_Srlx3KH6pzLd2yxjk456YEK4iCD9KRjqBvnUVJGeih5fqfIs36Y1h_eNc3YnYCHUeHCXo6nD_ubYUr5li1kWXLHqbejuW1gL0HeDn1A"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold mb-2 group-hover:text-primary transition-colors"
+                >
+                  FinTrack App
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                  Personal finance tracking with intuitive data visualization
+                  and AI insights.
+                </p>
+                <div class="flex gap-3">
+                  <a
+                    class="flex-1 text-center py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:brightness-110 transition-all"
+                    href="#"
+                    >Overview</a
+                  >
+                  <a
+                    class="flex-1 text-center py-2 border border-slate-200 dark:border-slate-700 text-sm font-semibold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+                    href="#"
+                    >Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700"
+            >
+              <div
+                class="aspect-video bg-slate-200 dark:bg-slate-700 relative overflow-hidden"
+              >
+                <img
+                  alt="Code Background"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI45qI4m0SrnmAA-3M2riXcKdUxE6Dmt38_eBDX5ITeVUC6ilWcD641eZsUB7xmesKcK1msKu39vO_jzlby5pbbzV_smNG4UUyptcuDD6AN2j0NuHWw3BpbleUcjGzAKn8UsYeAN_JheYYhTyFJfOkBCTSrPstEjkaX3r8B7NsvqNigEZkEyJ-wGhg0QeBLGj_XJA5VsORCC2PbLLlTvs7KpH40HlcaBHYxHp2qYUb6_MfsjVrtnbzYZ2zSUIcSuHy34QPJTCVMQ"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold mb-2 group-hover:text-primary transition-colors"
+                >
+                  DevStream Tool
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">
+                  Developer workflow tool for seamless team collaboration and
+                  code reviews.
+                </p>
+                <div class="flex gap-3">
+                  <a
+                    class="flex-1 text-center py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:brightness-110 transition-all"
+                    href="#"
+                    >Overview</a
+                  >
+                  <a
+                    class="flex-1 text-center py-2 border border-slate-200 dark:border-slate-700 text-sm font-semibold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+                    href="#"
+                    >Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center gap-4">
+            <button
+              class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all"
+            >
+              <span class="material-icons-outlined">chevron_left</span>
+            </button>
+            <button
+              class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all"
+            >
+              <span class="material-icons-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[var(--deep-indigo)] text-white pt-24 pb-12 overflow-hidden relative"
+    >
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-800 rounded-full opacity-50"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="flex flex-col items-center text-center mb-20 space-y-10">
+          <h3 class="text-5xl md:text-6xl font-bold serif-font italic">
+            Thank You for visiting
+          </h3>
+          <div class="flex gap-6">
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#0077b5] transition-all group"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#ea4c89] transition-all group"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 24c-6.627 0-12-5.373-12-12s5.373-12 12-12 12 5.373 12 12-5.373 12-12 12zm0-2c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm0-16.5c2.481 0 4.5 2.019 4.5 4.5 0 1.233-.501 2.348-1.31 3.155-.008.007-.015.014-.022.022-.806.81-1.923 1.323-3.168 1.323s-2.361-.513-3.167-1.322c-.007-.008-.014-.015-.022-.022-.81-.807-1.311-1.922-1.311-3.156 0-2.481 2.019-4.5 4.5-4.5z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-[#E1306C] transition-all group"
+              href="#"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-3 items-center gap-10 pt-16 border-t border-white/10"
+        >
+          <div class="text-left font-bold text-2xl serif-font italic">
+            Studio<span class="text-[var(--electric-blue)]">.</span>
+          </div>
+          <div class="flex justify-center gap-8 text-sm font-medium opacity-70">
+            <a class="hover:opacity-100 transition-opacity" href="#"
+              >Projects</a
+            >
+            <a class="hover:opacity-100 transition-opacity" href="#"
+              >Services</a
+            >
+            <a class="hover:opacity-100 transition-opacity" href="#">Privacy</a>
+          </div>
+          <div class="text-right text-sm opacity-50">
+            © 2024 UI/UX Designer Portfolio. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

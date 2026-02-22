@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --bg-color: 17 24 39; /* slate-900 in RGB */
+    }
+  </style>
+</head>
+
+<body class="min-h-[200vh]">
+
+  <!-- HEADER -->
+  <header
+    id="navbar"
+    class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent"
+  >
+    <nav class="p-4 text-white">
+      Navbar
+    </nav>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <div class="pt-24 p-6">
+    Scroll down ⬇️
+  </div>
+
+  <!-- SCRIPT MUST BE AFTER HTML -->
+  <script>
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add(
+          "bg-[rgb(var(--bg-color))]/80",
+          "backdrop-blur-md"
+        );
+      } else {
+        navbar.classList.remove(
+          "bg-[rgb(var(--bg-color))]/80",
+          "backdrop-blur-md"
+        );
+      }
+    });
+  </script>
+
+</body>
+</html>

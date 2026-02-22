@@ -1,0 +1,387 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pradeep | UI/UX Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@200;300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --bg-color: #fafafa;
+        --text-main: #1a1a1a;
+        --text-muted: #666666;
+        --accent-soft: #f0edff;
+        --accent-purple: #9d8df1;
+        --border-color: #e5e5e5;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        letter-spacing: -0.01em;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+      .section-padding {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+      }
+      .nav-link {
+        @apply relative py-1 text-sm tracking-widest uppercase font-medium transition-colors duration-300;
+      }
+      .nav-link::after {
+        content: "";
+        @apply absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--text-main)] transition-all duration-300;
+      }
+      .nav-link:hover::after {
+        @apply w-full;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 200,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .project-card img {
+        transition: transform 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+      }
+      .project-card:hover img {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-color)]/80 backdrop-blur-md"
+    >
+      <nav
+        class="max-w-[1440px] mx-auto px-8 md:px-16 h-24 flex items-center justify-between"
+      >
+        <a class="text-xl font-semibold tracking-tighter serif-font" href="#"
+          >Pradeep<span class="text-[var(--accent-purple)]">.</span></a
+        >
+        <div class="hidden md:flex items-center gap-12">
+          <a class="nav-link" href="#">Work</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#philosophy">Philosophy</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <span class="material-symbols-outlined">menu</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="min-h-screen flex flex-col justify-center items-center px-8 md:px-16 pt-32 pb-20 overflow-hidden"
+      >
+        <div class="max-w-7xl w-full grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-12">
+            <div class="space-y-6">
+              <h1
+                class="text-6xl md:text-8xl lg:text-9xl leading-[0.9] font-medium serif-font"
+              >
+                Hello, I'm <br />Pradeep.
+              </h1>
+              <p
+                class="text-xl md:text-2xl text-[var(--text-muted)] font-light max-w-xl leading-relaxed"
+              >
+                I create intentional, high-fidelity digital experiences that
+                bridge the gap between human emotion and technical precision.
+              </p>
+            </div>
+            <div class="flex gap-8">
+              <a
+                class="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-widest border-b border-[var(--text-main)] pb-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] transition-colors duration-300"
+                href="#portfolio"
+              >
+                View Case Studies
+                <span class="material-symbols-outlined text-lg"
+                  >arrow_outward</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative">
+            <div
+              class="aspect-[4/5] bg-neutral-100 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700"
+            >
+              <img
+                alt="Pradeep Portrait"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCNZy8xNCByxfG6jYGopgyBzrIVWeZdngzOEpvvLmJAthhVxUK_93hOcTUkc7cnqFGFMtS4tFiyC_q3lTg6b0ZkRGwVvS_Dchlk-0fP6mWklXOUckkARwIJ0-g4-rC9jNiPLwFm5NQjtmVq5ncJT7n8yQVCb9VflhR0m5fFGqXQ9b_vFFCn6lma58xZVKXKzOcBg9AoF95RAVH0upPSiMuzuuG6wsUf91GULFUkma_cWpHkDtHZsSlbhFD0z3MEseMIsg6yF9MIQ"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-padding bg-white border-y border-[var(--border-color)]"
+        id="philosophy"
+      >
+        <div class="max-w-3xl mx-auto px-8 text-center space-y-12">
+          <span
+            class="text-xs font-bold uppercase tracking-[0.3em] text-[var(--accent-purple)]"
+            >The Philosophy</span
+          >
+          <h2 class="text-4xl md:text-6xl serif-font leading-tight">
+            Design is the quiet language of functionality and aesthetics.
+          </h2>
+          <div
+            class="space-y-6 text-lg text-[var(--text-muted)] font-light leading-relaxed"
+          >
+            <p>
+              I believe that great design doesn't shout; it guides. My approach
+              is rooted in reductionism—removing the unnecessary until only the
+              essential remains. This ensures that every interaction is
+              meaningful and every visual element serves a purpose.
+            </p>
+            <p>
+              By blending rigorous user research with a sophisticated visual
+              palette, I build interfaces that feel both modern and timeless.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-padding max-w-[1440px] mx-auto px-8 md:px-16"
+        id="portfolio"
+      >
+        <div
+          class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8"
+        >
+          <div class="space-y-4">
+            <h2 class="text-5xl md:text-7xl serif-font">Selected Work</h2>
+            <p class="text-[var(--text-muted)] font-light text-lg">
+              A curation of digital products and visual identities.
+            </p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-24">
+          <div class="project-card group cursor-pointer">
+            <div
+              class="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]"
+            >
+              <img
+                alt="Health Platform"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgw1afXfrNxf62ITPeXVRrSHWj7aZgUzG7FbdIsb-znGW2-WyRrF3q3mZ780TIxe6MKKMiPqPfW_avtl-K7Hvpy80EHtnnd3Ne9p0jI3Md4mztoeIV1gzPfYhNQ0eAOJWxnMaG68-k9Ft7pDSebN3z-LO8ZmtgDxeI-v2SxIRR9yVrqYM8cRt_a3HpEUTRHEoAnlg4JqBKUODXfH7hNTFCUbWPX1q-bHX2xKZGoYl06d8dcwQvhCIAvo00ezFCnuQQlzf3Gjj8og"
+              />
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <span
+                  class="text-[10px] uppercase tracking-[0.2em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]"
+                  >Product Design</span
+                >
+              </div>
+              <h3
+                class="text-3xl serif-font group-hover:italic transition-all duration-300"
+              >
+                Health Platform
+              </h3>
+              <p class="text-[var(--text-muted)] font-light max-w-md">
+                Redefining personal wellness through a minimalist mobile
+                ecosystem.
+              </p>
+            </div>
+          </div>
+          <div class="project-card group cursor-pointer md:mt-32">
+            <div
+              class="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]"
+            >
+              <img
+                alt="Finance Tracker"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwH2tT53qoevWt9XcnP3uo1A2N5mL3k1-TffQRQ9ydmUCr4q7H4yMRZD-C8Nbp-XwttnTBcK_ohkJiC97FjtNNL-0QMMlWaiuMiJNWNhEOKKuXDEJvFP8mp0PvV29mOi5acWQNBSpjEuBJDmY_PLDabwtKdR2i5fg_DzI039KOQFy0tz0qS97LzWHU64UHVjnOUN44QQax2kqa1zZhm_KpTYLMkn74J54MG8aHU1n5ISYPNuhwpATWLY0h7l5kbz5cttpdsu0c8g"
+              />
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <span
+                  class="text-[10px] uppercase tracking-[0.2em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]"
+                  >Fintech</span
+                >
+              </div>
+              <h3
+                class="text-3xl serif-font group-hover:italic transition-all duration-300"
+              >
+                Finance Tracker
+              </h3>
+              <p class="text-[var(--text-muted)] font-light max-w-md">
+                Complexity distilled into a seamless dashboard experience.
+              </p>
+            </div>
+          </div>
+          <div class="project-card group cursor-pointer">
+            <div
+              class="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]"
+            >
+              <img
+                alt="Travel Explorer"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG5u3p2X4LA-1mRyDpJalYRNWpTiRuI9zDKwxOh8HdCzZeil2zh5221rKauGgvF3KZq6OyaTOsAIKflDttOAFvwCxuT8WNb5u8wKD58vsczPU452WSOAj3MnCJl_f_qqeDlZUNv7X6Wl9oGZllMPZoquueKPIj1dafA239uVHLQxakVHvcXh0sW-6gzkQ4W6V08-Dc9YBWMTeLtS8MP7I6BS7KOBIO2nRoY_Fni0N05tdBTcF-pai2o05S9c0vccoCaSUYdO775A"
+              />
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <span
+                  class="text-[10px] uppercase tracking-[0.2em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]"
+                  >Interaction</span
+                >
+              </div>
+              <h3
+                class="text-3xl serif-font group-hover:italic transition-all duration-300"
+              >
+                Travel Explorer
+              </h3>
+              <p class="text-[var(--text-muted)] font-light max-w-md">
+                Bringing the world closer with community-led exploration tools.
+              </p>
+            </div>
+          </div>
+          <div class="project-card group cursor-pointer md:mt-32">
+            <div
+              class="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]"
+            >
+              <img
+                alt="Dev Portfolio"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuChAaw5QRBG3NeZSgDKZ-TDd7mfuVZfoNrOLRFch_7lbIWpfzcs0Lm--D2Y6CiGjB600i0arQBkZXnBhLK-BkLIDsddNNq6OKORoMQBenlvd8eAlXQiZQEh6_xZE7fuKCtXUx75TNkeOb2fJyz51B1ZSZkFxez2sEedEQ_qomCz_WUfiTzvgRS4A7ohf1Oog0hddHjFZ41zagzTM66LQVzVCAYxB1gQ7KZFtW4bwVxv2q3MtDyYX2-8EW7VImBJK-BGW_58wVxnPA"
+              />
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <span
+                  class="text-[10px] uppercase tracking-[0.2em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]"
+                  >Web Design</span
+                >
+              </div>
+              <h3
+                class="text-3xl serif-font group-hover:italic transition-all duration-300"
+              >
+                Curated Spaces
+              </h3>
+              <p class="text-[var(--text-muted)] font-light max-w-md">
+                A spatial design system for digital creators and studios.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-padding bg-white" id="about">
+        <div class="max-w-4xl mx-auto px-8 grid md:grid-cols-12 gap-16">
+          <div class="md:col-span-4">
+            <h2 class="text-3xl serif-font sticky top-32">About Me</h2>
+          </div>
+          <div
+            class="md:col-span-8 space-y-8 text-lg font-light text-[var(--text-muted)] leading-relaxed"
+          >
+            <p>
+              Based in a quiet corner of the digital world, I collaborate with
+              forward-thinking brands to build products that people love. My
+              journey started at the intersection of psychology and technology,
+              leading me to a design career focused on human-centered
+              innovation.
+            </p>
+            <div class="pt-8 border-t border-[var(--border-color)]">
+              <h4
+                class="text-xs font-bold uppercase tracking-widest text-[var(--text-main)] mb-6"
+              >
+                Expertise
+              </h4>
+              <div class="flex flex-wrap gap-4 text-sm font-medium">
+                <span
+                  class="px-5 py-2 border border-[var(--border-color)] rounded-full"
+                  >User Interface</span
+                >
+                <span
+                  class="px-5 py-2 border border-[var(--border-color)] rounded-full"
+                  >Experience Strategy</span
+                >
+                <span
+                  class="px-5 py-2 border border-[var(--border-color)] rounded-full"
+                  >Prototyping</span
+                >
+                <span
+                  class="px-5 py-2 border border-[var(--border-color)] rounded-full"
+                  >Visual Identity</span
+                >
+                <span
+                  class="px-5 py-2 border border-[var(--border-color)] rounded-full"
+                  >Front-end Development</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-padding border-t border-[var(--border-color)]"
+        id="contact"
+      >
+        <div class="max-w-7xl mx-auto px-8 md:px-16 text-center">
+          <h2 class="text-6xl md:text-9xl serif-font mb-16 leading-none">
+            Let's talk.
+          </h2>
+          <div class="flex flex-col items-center gap-8">
+            <a
+              class="text-2xl md:text-4xl font-light hover:text-[var(--accent-purple)] transition-colors duration-300 underline underline-offset-8 decoration-1 decoration-[var(--border-color)]"
+              href="mailto:hello@pradeep.design"
+            >
+              hello@pradeep.design
+            </a>
+            <div class="flex gap-12 mt-12">
+              <a class="nav-link" href="#">LinkedIn</a>
+              <a class="nav-link" href="#">Dribbble</a>
+              <a class="nav-link" href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="py-16 bg-[var(--bg-color)] border-t border-[var(--border-color)]"
+    >
+      <div
+        class="max-w-[1440px] mx-auto px-8 md:px-16 flex flex-col md:flex-row justify-between items-center gap-8"
+      >
+        <div class="text-center md:text-left space-y-2">
+          <h3 class="text-2xl serif-font italic">Thank you for visiting.</h3>
+          <p
+            class="text-xs text-[var(--text-muted)] uppercase tracking-widest font-light"
+          >
+            © 2024 Pradeep Portfolio — All rights reserved.
+          </p>
+        </div>
+        <div class="flex items-center gap-12">
+          <a
+            class="text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors"
+            href="#"
+          >
+            <span class="material-symbols-outlined !text-xl">expand_less</span>
+          </a>
+          <div
+            class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em]"
+          >
+            <a class="hover:text-[var(--accent-purple)]" href="#">Terms</a>
+            <a class="hover:text-[var(--accent-purple)]" href="#">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

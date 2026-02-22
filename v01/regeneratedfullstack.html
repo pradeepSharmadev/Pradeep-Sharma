@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pradeep | UI/UX Designer Portfolio</title>
+<meta content="Personal portfolio of Pradeep, a UI/UX designer specializing in creating elegant and functional digital experiences." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#7C3AED", // Vibrant Purple
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "Inter", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .petal-card {
+            border-radius: 40px 10px 40px 10px;
+        }
+        .stagger-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        .project-card:nth-child(even) {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-300">
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-icons">architecture</span>
+</div>
+<span class="text-xl font-display font-bold tracking-tight">PRADEEP</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="font-medium hover:text-primary transition-colors" href="#portfolio">Portfolio</a>
+<a class="font-medium hover:text-primary transition-colors" href="#contact">Contacts</a>
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons text-xl dark:hidden">dark_mode</span>
+<span class="material-icons text-xl hidden dark:block text-yellow-400">light_mode</span>
+</button>
+</nav>
+</div>
+</header>
+<main class="pt-20">
+<section class="max-w-7xl mx-auto px-6 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h1 class="text-5xl lg:text-7xl font-display font-bold leading-tight mb-8">
+                    It's so nice to meet you, <span class="text-primary">I'm Pradeep :)</span>
+</h1>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary hover:bg-violet-700 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg shadow-primary/20 flex items-center gap-2" href="#">
+<span class="material-icons text-xl">description</span>
+                        Resume
+                    </a>
+<a class="border-2 border-primary text-primary hover:bg-primary/5 px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2" href="#">
+<span class="material-icons text-xl">link</span>
+                        LinkedIn
+                    </a>
+</div>
+</div>
+<div class="relative h-[400px] lg:h-[500px]">
+<div class="absolute top-0 right-10 w-48 h-64 bg-slate-100 dark:bg-slate-800 rounded-xl shadow-xl transform -rotate-12 flex items-center justify-center border-4 border-white dark:border-slate-700 overflow-hidden">
+<img alt="Design sketch" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgRJg6MhgGpb6RcwcekZ0n5OgON6yAv3Ng7qfy37nTwaa38C4KoxoSNKqD2ZCH19PR86VOoJAX2zJYBL19V68xMabviqKbJma1b2rjh7QXkh9MXtbSkLqXWe7UJNuXSWQ4UkRW27PngJ_VVpLMD0vHJ1Ah-SsN8SOLx-_EuXaSWI9rwVJ55oLX6njavGJek8UyXJ_ci8qfGVt8fd-bc8vnVFQCWdgBQh9kKcZqfTEFvHdedY-DgzyzMX-CFw_ULsFJQIuaixwvAA"/>
+</div>
+<div class="absolute top-20 right-48 w-56 h-40 bg-slate-200 dark:bg-slate-700 rounded-xl shadow-2xl transform rotate-6 flex items-center justify-center border-4 border-white dark:border-slate-700 overflow-hidden">
+<img alt="UI Layout" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc2z7MuvLCZqRZ5aWMBWJ-sqxRtulWJaNJn3guN9kagtV2jTZpi2Q5j47s4I-M6IrlzCbqdKL0UljjtfulXsCIz1i64ThoCYibwsQV9D7G1l4DZYtx2kkdYTSE3_pHnfNFacZ2Nu6n_atEwV4fuhjfEiB_MenVA6uVXIfCvbeBCNwx-dFTrV0yPf_1qhmBBNgQo6TwJ6GxQbQ35eIoKhB4RiRY4uuPeGom-MxEm6xuRKwHFMKzekgMoIk5VfpwttJg9bpeAr-h7Q"/>
+</div>
+<div class="absolute bottom-10 right-20 w-52 h-52 bg-slate-300 dark:bg-slate-600 rounded-xl shadow-xl transform -rotate-6 flex items-center justify-center border-4 border-white dark:border-slate-700 overflow-hidden">
+<img alt="Mobile design" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3U8ugI4BTNGcIGYlEbPg7ZcGKPPLjyTRkegq6uoth4nsfWB2P77yhAEXkLQNq-mEhJ8S5X3JUkf62vTyRtXrPm4I6dcaxSydx9qUOCUgiFFhuJWQj8rZuUOtVLmvR143tC9_yMzxFAAyXwKF5a9tyqnQkeIe5GQprmfovEPNT6CWfCBuxmgOxNgWjFc9szDUEQXwGwrmo9wlVYVX4A9t3GWtj6oYb5NJJr3_Gi-_bfkRsqFLMQcSZ30pmdNBn2Opn1bCw46fMSQ"/>
+</div>
+<div class="absolute top-1/2 left-0 w-40 h-40 bg-primary/10 rounded-xl backdrop-blur-sm border-2 border-primary/20 flex items-center justify-center">
+<span class="material-icons text-primary text-5xl">auto_awesome</span>
+</div>
+</div>
+</section>
+<section class="bg-slate-50 dark:bg-slate-900/50 py-24" id="about">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-3xl font-display font-bold mb-10 flex items-center gap-4">
+                    Who am I? <span class="h-1 flex-1 bg-slate-200 dark:bg-slate-800 rounded-full"></span>
+</h2>
+<div class="space-y-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+<p>
+                        Growing up in India, my fascination with art and its potential to influence lives has been a lifelong passion. I began sketching and painting at the age of eight, and this love for artistic expression led me to the world of design.
+                    </p>
+<p>
+                        Throughout my career, I have worked on a variety of products and teams. These experiences encompassed serving as the sole designer for a start-up, crafting user-friendly fin-tech interactions at Quick, revamping intricate and engaging features at Rocket, and collaborating within cross-functional teams at Google.
+                    </p>
+<p>
+                        With a focus on experience design and business strategy, I have developed strong skills in design research, concept development, prototyping, and user testing. My objective has always been to unify the team with a shared vision.
+                    </p>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-24" id="portfolio">
+<div class="mb-16">
+<p class="text-primary font-semibold uppercase tracking-widest mb-2">My Projects</p>
+<h2 class="text-4xl lg:text-5xl font-display font-bold">Works that I've done<br/>for the past 3 years</h2>
+</div>
+<div class="stagger-grid mb-16">
+<div class="group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700">
+<div class="aspect-video bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
+<img alt="Fintech Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByX3Zs3tKPN09lsvah3xkTPKM1IRgS-x9d2tT83maNDRzdssKvsMaI6SKl2w38uNhOXuPrR6QW5ENpslYjrwYA5yvpVI6HPE-E8AYg3Lvfh9S-kHZhKutB0a77OAz3rr1Ca4pS4HPa8Q18PXBQkeh2zVLn7r3EZJsdoUkwQcK_bVpoDi6Fw2LoCwcM-ZhuNSdUEQhg4xBkyjylAX0R_QQAXIKlQwtf-HVJp1N51_-XALxlQjQwIlErM8XKOFonAMrlASxl8_H9fg"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold mb-2">Quick Fintech</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Mine is not a rigid, but rather an evolving process as I learn from new experiences and user feedback.</p>
+<a class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all" href="#">
+                            Visit Project <span class="material-icons ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700">
+<div class="aspect-video bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
+<img alt="E-commerce Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChZyR0sbpEuiERRWHbqeM4SEP2zVTi9tE_dQ9PpV_ifvzu9ggQfY3oGQfo7RiTj4WGUnACN6A7dIapY8Sqd0l2tt98Td3MmfjAWL8_1x1Qhn25a3rerPhM7yPz3Wt1ESXPqMwV9253Y0Lbr5H0kWoZRVsWwmUVpNrbMeYLR2_5B700VJRbsEIqmjIhtcsYjmaW2nosxeUkIEuFuwSjGk6jIfpiQ0_noC4oE9CWZwdw3QOoctnROSLCO8xYCJzIC0ezB55XBJRwlA"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold mb-2">Rocket Dash</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Redesigning complex dashboard interactions to improve data visualization and user efficiency.</p>
+<a class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all" href="#">
+                            Visit Project <span class="material-icons ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700">
+<div class="aspect-video bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
+<img alt="Health App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwhfb01SvtmXMxAGz6crvfvawVqaGHq_jpwmuW1ymHff9k0VhIPBa9SHZXPdLAWCOzxGkZrMCrhpOR6pYmDhj9hR42ybYI2xNKNorvcj1oVCqgHuSTixl2ogUdDY2mJxTLMt-RRHW79njfWcANdV9_3nnycG9v4SoBk18t9nGARa-IYhPRnB0f0rCPZsm8BMmI8AzfIEmoExF34fvJW-4F9X1H3W2jaFTuwRWfn74ImjJI-cc34O3C-NoROncUK6tXKWYc7j5oWg"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold mb-2">Pulse Health</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">A holistic approach to personal wellness tracking and community engagement through design.</p>
+<a class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all" href="#">
+                            Visit Project <span class="material-icons ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700">
+<div class="aspect-video bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
+<img alt="Analytics Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvqfLJph4LCd5JLjDtSLk7XXcRmzm_ZW4bjHcz3x9Th6sB7KUdIRJtXvT5D-L6i98HHHG2Q9QuJy8TveJQ9j2aPXcWKKiMggyT11MTQjsS2YJ29W8Qvkla-7wy2ROWKUCqY7Be33-WDFOq1ms7H0hV9UrI997I5v0bQs797vTB9NGm2fErjsgAetlFHMNBwKVYwGwQmOuaYU2EzzWKckbdM4Wo2IivyrCMhXSi3Wn1PGQ15Ex5r6VNSFxUnfkc9sOTOwKMojuFIw"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold mb-2">Insight Flow</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Simplifying complex data sets into intuitive, actionable visual narratives for stakeholders.</p>
+<a class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all" href="#">
+                            Visit Project <span class="material-icons ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="text-center">
+<button class="px-10 py-4 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-white transition-all">
+                    View All Projects
+                </button>
+</div>
+</section>
+<section class="bg-slate-50 dark:bg-slate-900/50 py-24">
+<div class="max-w-5xl mx-auto px-6">
+<div class="flex flex-wrap justify-center gap-8 mb-16 border-b border-slate-200 dark:border-slate-800">
+<button class="pb-4 px-4 text-primary font-bold border-b-2 border-primary">Design</button>
+<button class="pb-4 px-4 text-slate-400 font-medium hover:text-slate-600 dark:hover:text-slate-200 transition-colors">Development</button>
+<button class="pb-4 px-4 text-slate-400 font-medium hover:text-slate-600 dark:hover:text-slate-200 transition-colors">Soft skills</button>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 text-center">
+<span class="material-icons text-4xl text-primary mb-4">palette</span>
+<h4 class="text-xl font-bold mb-2">Visual Design</h4>
+<p class="text-slate-500 text-sm">Crafting beautiful interfaces with a focus on color, typography, and hierarchy.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 text-center">
+<span class="material-icons text-4xl text-primary mb-4">touch_app</span>
+<h4 class="text-xl font-bold mb-2">UX Research</h4>
+<p class="text-slate-500 text-sm">Understanding user needs through surveys, interviews, and usability testing.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 text-center">
+<span class="material-icons text-4xl text-primary mb-4">layers</span>
+<h4 class="text-xl font-bold mb-2">Prototyping</h4>
+<p class="text-slate-500 text-sm">Building interactive prototypes to validate ideas quickly and effectively.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 text-center md:col-start-1 md:mx-auto md:w-full">
+<span class="material-icons text-4xl text-primary mb-4">view_quilt</span>
+<h4 class="text-xl font-bold mb-2">Wireframing</h4>
+<p class="text-slate-500 text-sm">Defining structural foundations and user flows for complex applications.</p>
+</div>
+<div class="p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 text-center md:w-full">
+<span class="material-icons text-4xl text-primary mb-4">interests</span>
+<h4 class="text-xl font-bold mb-2">Motion Design</h4>
+<p class="text-slate-500 text-sm">Bringing life to interfaces through meaningful and smooth animations.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-5xl mx-auto px-6 py-24">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-display font-bold mb-4">Hobbies</h2>
+<p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400">
+                    Art has always been an integral part of my life from the very beginning. Painting and sketching has always been a way to escape and the freedom it offers have fueled my thoughts, making art an everlasting love affair.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8 mb-8">
+<div class="petal-card aspect-square bg-slate-100 dark:bg-slate-800 overflow-hidden shadow-inner flex items-center justify-center">
+<img alt="Art hobby" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMnrRkyxOScdZU8CBDqAa4cputF4SwJzwnRKW6Lck1M-i69q9N-0Le_iQ04Y9gRVIXryzD6QqxTvXh0--LuaoisyEFwfxWTdoZhqKmiiMdhqK7Yaa5GvGfdKnTzXu0Hu-FH0USAZ5_Ts3CAkUCOkbm0d-ekftkUwGzmRWmOabwkIF4Vo2ryG9XbQNMeZodbNRyf290l9IY-hSB1Czgf4ef9rakYNO62fZBmu33COqBY75ECCl2-zTXdsVlmXVG9MR7Vi3XRmIwqg"/>
+</div>
+<div class="petal-card aspect-square bg-slate-100 dark:bg-slate-800 overflow-hidden shadow-inner flex items-center justify-center">
+<img alt="Painting hobby" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP2AolzC1iOJfg0JB5vjG1ax7FoSOY_BRm83Gq3HGoQFl1nAw2t3pZPPOlpygZ9LrRxavTJMbFibpm0HzqT4EPLk0-PHVM1hAtFoNcGrXsl5ID-1wJOA0FL66DzTDXldJN9e2cD_GNWlnhR4cxc-d3AQaZLHFIQY5WnUOaTUrxXczN0__YWb5Yc-OK6uSolMgq4W-ljPvFekFLDOw29jsj8Clp1GJXRkMoTLaD_omrl-zHGVkBPhVDC6OwIhTEItl3BET0P6MsLA"/>
+</div>
+<div class="petal-card aspect-square bg-slate-100 dark:bg-slate-800 overflow-hidden shadow-inner flex items-center justify-center">
+<img alt="Sketching hobby" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo64Z-DdVTOjClMLI5iCDS-eCENAFP06aVlTgUjGdVm5Hi045hLbCscAWEdOwo-zR2q96b4t5_DOmpWMOgexz_XA7YoUukdPdHaugSPUXItm1D4ikRSBZuXgXc23yOQcnkWinpSgY2_dZA1BPL8dXgp7ihpKq1aKlRfNuOLIVajsKV0Ayis1VQ_LbtvfGicE0y9fGiKPcfEFAs78phmvtPNzoJB-1XrMTVWxD-1ifdK9zZhKH0d6-uXeHj9507j8kB1RaDINk0TA"/>
+</div>
+<div class="petal-card aspect-square bg-slate-100 dark:bg-slate-800 overflow-hidden shadow-inner flex items-center justify-center">
+<img alt="Creative hobby" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAqGktHYx_TUiw0PR-rGm-9jftpKVKIVaY__oW0mTVJ4snBpph18tDyDEhj2qdHvGBC3cysu1xO9fbcChVJDqJLe5nPd4WWY3CQ9y6UJarf1bk3jjKU6-iajiF6xoKuMexHldZIMx3aeJgWCzUJGox9HQLY6lUETaqJveNGXYeA_fs42St27nXOfk3RI2_862F9ENJkMUV9dhiaciKx8t0PUr75GE_AWKU3284osFlMMIdBBNb-Ok9ShCnVFfvV1cMNN-BVa5qLA"/>
+</div>
+</div>
+<div class="flex justify-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-slate-800" id="contact">
+<div class="flex items-center justify-center gap-4 mb-12">
+<div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
+<h2 class="text-4xl font-display font-bold px-4">Contact Me</h2>
+<div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
+</div>
+<div class="flex flex-col items-center gap-6 mb-12">
+<div class="flex flex-wrap justify-center gap-4">
+<span class="px-6 py-2 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-600 dark:text-slate-400 flex items-center gap-2">
+<span class="material-icons text-sm">phone</span> +91-8434 111 639
+                    </span>
+<span class="px-6 py-2 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-600 dark:text-slate-400 flex items-center gap-2">
+<span class="material-icons text-sm">phone</span> +91-7319 662 468
+                    </span>
+</div>
+<span class="px-8 py-3 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-900 dark:text-slate-100 font-medium flex items-center gap-2">
+<span class="material-icons text-sm">email</span> amarahipradeep7319@gmail.com
+                </span>
+</div>
+<div class="flex justify-center gap-8 mb-16">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="material-icons">share</i></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="material-icons">palette</i></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="material-icons">camera_alt</i></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="material-icons">code</i></a>
+</div>
+<p class="text-center text-slate-500 font-medium italic">ThankYou for visiting</p>
+</section>
+</main>
+<footer class="py-8 text-center text-slate-400 text-sm border-t border-slate-100 dark:border-slate-800">
+<p>© 2024 Pradeep Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body></html>

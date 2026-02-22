@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Selected Work | Pradeep.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --accent-purple: #818cf8;
+            --dark-bg: #0f172a;
+            --modal-bg: #ffffff;
+            --code-bg: #0f172a;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+        h1, h2, h3, .serif-font { 
+            font-family: 'Playfair Display', serif; 
+        }
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .staggered-grid > div:nth-child(even) {
+            margin-top: 6rem;
+        }
+        @media (max-width: 768px) {
+            .staggered-grid > div:nth-child(even) {
+                margin-top: 0;
+            }
+        }
+        .filter-link.active {
+            color: var(--accent-purple);
+            border-bottom: 2px solid var(--accent-purple);
+        }
+        .experiment-link:hover span {
+            border-bottom: 1px solid var(--accent-purple);
+        }
+    </style>
+</head>
+  <body>
+    <div
+      class="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-12 lg:p-20"
+    >
+      <div class="absolute inset-0 bg-slate-900/90 backdrop-blur-sm"></div>
+      <div
+        class="relative w-full max-w-6xl bg-white shadow-2xl flex flex-col overflow-hidden h-full max-h-[85vh]"
+      >
+        <div
+          class="flex items-center justify-between px-8 py-5 border-b border-slate-100"
+        >
+          <div class="flex items-center gap-4">
+            <span
+              class="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-purple)] bg-indigo-50 px-2 py-1"
+              >Experiment 01</span
+            >
+            <h2 class="text-xl font-medium text-slate-900 serif-font">
+              Fluid Gradients
+            </h2>
+          </div>
+          <button
+            class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-50 transition-colors"
+          >
+            <span class="material-symbols-outlined text-slate-400">close</span>
+          </button>
+        </div>
+        <div class="flex-1 flex flex-col md:flex-row overflow-hidden">
+          <div class="w-full md:w-1/2 bg-slate-50 flex flex-col">
+            <div
+              class="p-4 border-b border-slate-200/60 bg-white flex items-center gap-2"
+            >
+              <div class="flex gap-1.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
+              </div>
+              <div
+                class="bg-slate-100 px-3 py-1 rounded text-[10px] text-slate-400 font-medium ml-2"
+              >
+                localhost:3000
+              </div>
+            </div>
+            <div class="flex-1 relative overflow-hidden group">
+              <img
+                alt="Live Preview"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgw1afXfrNxf62ITPeXVRrSHWj7aZgUzG7FbdIsb-znGW2-WyRrF3q3mZ780TIxe6MKKMiPqPfW_avtl-K7Hvpy80EHtnnd3Ne9p0jI3Md4mztoeIV1gzPfYhNQ0eAOJWxnMaG68-k9Ft7pDSebN3z-LO8ZmtgDxeI-v2SxIRR9yVrqYM8cRt_a3HpEUTRHEoAnlg4JqBKUODXfH7hNTFCUbWPX1q-bHX2xKZGoYl06d8dcwQvhCIAvo00ezFCnuQQlzf3Gjj8og"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-white/10 backdrop-blur-[2px]"
+              >
+                <button
+                  class="bg-white text-slate-900 px-6 py-3 text-[11px] font-bold uppercase tracking-widest shadow-xl"
+                >
+                  Restart Preview
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 bg-[var(--code-bg)] flex flex-col">
+            <div class="flex px-4 pt-4 border-b border-white/5">
+              <button
+                class="px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-white border-b border-[var(--accent-purple)]"
+              >
+                Index.js
+              </button>
+              <button
+                class="px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-white transition-colors"
+              >
+                Styles.css
+              </button>
+              <button
+                class="px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-white transition-colors"
+              >
+                Utils.js
+              </button>
+            </div>
+            <div
+              class="flex-1 overflow-auto p-6 code-font text-sm leading-relaxed relative"
+            >
+              <div class="flex gap-6">
+                <div class="text-slate-600 text-right select-none w-4">
+                  1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15
+                </div>
+                <div class="text-slate-300">
+                  <span class="text-purple-400">import</span> React
+                  <span class="text-purple-400">from</span>
+                  <span class="text-emerald-400">'react'</span>;<br />
+                  <span class="text-purple-400">import</span> { Canvas }
+                  <span class="text-purple-400">from</span>
+                  <span class="text-emerald-400">'@react-three/fiber'</span
+                  >;<br />
+                  <br />
+                  <span class="text-purple-400">const</span>
+                  <span class="text-blue-400">GradientMesh</span> = ()
+                  <span class="text-purple-400">=&gt;</span> {<br />
+                    <span class="text-purple-400">const</span> meshRef =
+                  <span class="text-blue-400">useRef</span>();<br />
+                  <br />
+                    <span class="text-blue-400">useFrame</span>((state)
+                  <span class="text-purple-400">=&gt;</span> {<br />
+                      meshRef.current.rotation.x +=
+                  <span class="text-orange-400">0.01</span>;<br />
+                    });<br />
+                  <br />
+                    <span class="text-purple-400">return</span> (<br />
+                      &lt;<span class="text-blue-300">mesh</span>
+                  ref={meshRef}&gt;<br />
+                        &lt;<span class="text-blue-300">planeGeometry</span>
+                  args={[<span class="text-orange-400">1</span>,
+                  <span class="text-orange-400">1</span>]} /&gt;<br />
+                        &lt;<span class="text-blue-300">shaderMaterial</span>
+                  /&gt;<br />
+                      &lt;/<span class="text-blue-300">mesh</span>&gt;<br />
+                    );<br />
+                  };
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-6 border-t border-white/5 flex items-center justify-between"
+            >
+              <div class="flex items-center gap-6">
+                <button
+                  class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white hover:text-[var(--accent-purple)] transition-colors"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >content_copy</span
+                  >
+                  Copy Code
+                </button>
+                <a
+                  class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 hover:text-white transition-colors"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-sm">link</span>
+                  GitHub
+                </a>
+              </div>
+              <div
+                class="text-[10px] text-slate-600 uppercase tracking-widest font-medium"
+              >
+                React • Node.js
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

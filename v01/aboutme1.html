@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Pradeep | Refined Minimalist Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@200;300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --primary-dark: #1a1a1a;
+        --accent-purple: #6366f1;
+        --bg-neutral: #fafafa;
+        --text-muted: #525252;
+        --border-color: #e5e5e5;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: var(--bg-neutral);
+        color: var(--primary-dark);
+        letter-spacing: 0.01em;
+      }
+      .serif-title {
+        font-family: "Playfair Display", serif;
+      }
+      .editorial-line {
+        line-height: 1.8;
+        letter-spacing: 0.02em;
+      }
+      .timeline-line {
+        width: 1px;
+        background: var(--border-color);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+      }
+      .timeline-dot {
+        width: 7px;
+        height: 7px;
+        background: var(--primary-dark);
+        border-radius: 50%;
+        position: absolute;
+        left: -3px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body class="antialiased selection:bg-indigo-100 selection:text-indigo-900">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-100"
+    >
+      <nav
+        class="max-w-5xl mx-auto px-8 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <span class="font-bold text-lg tracking-tighter uppercase serif-title"
+            >Pradeep<span class="text-[var(--accent-purple)]">.</span></span
+          >
+        </div>
+        <div
+          class="hidden md:flex items-center gap-12 text-[13px] font-medium tracking-widest uppercase text-neutral-500"
+        >
+          <a class="hover:text-black transition-colors" href="#">Home</a>
+          <a class="text-black" href="#about">About</a>
+          <a class="hover:text-black transition-colors" href="#portfolio"
+            >Works</a
+          >
+          <a class="hover:text-black transition-colors" href="#contact"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="pt-32 pb-40">
+      <section class="max-w-5xl mx-auto px-8 mb-32">
+        <div class="max-w-3xl">
+          <h1
+            class="serif-title text-[clamp(4rem,10vw,8rem)] leading-[0.9] mb-12 italic font-light tracking-tight"
+          >
+            About.
+          </h1>
+          <p
+            class="text-2xl md:text-3xl editorial-line text-neutral-800 font-light mb-16"
+          >
+            Based in Bangalore, I am a product designer dedicated to the pursuit
+            of <span class="italic serif-title">essential beauty</span> and
+            functional clarity in digital spaces.
+          </p>
+        </div>
+        <div
+          class="relative w-full aspect-[16/9] mb-24 overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700"
+        >
+          <img
+            alt="Atmospheric Studio Portrait"
+            class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCNZy8xNCByxfG6jYGopgyBzrIVWeZdngzOEpvvLmJAthhVxUK_93hOcTUkc7cnqFGFMtS4tFiyC_q3lTg6b0ZkRGwVvS_Dchlk-0fP6mWklXOUckkARwIJ0-g4-rC9jNiPLwFm5NQjtmVq5ncJT7n8yQVCb9VflhR0m5fFGqXQ9b_vFFCn6lma58xZVKXKzOcBg9AoF95RAVH0upPSiMuzuuG6wsUf91GULFUkma_cWpHkDtHZsSlbhFD0z3MEseMIsg6yF9MIQ"
+          />
+        </div>
+      </section>
+      <section
+        class="max-w-5xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 mb-40"
+      >
+        <div class="md:col-start-5 md:col-span-8 space-y-8">
+          <h2
+            class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400 mb-6"
+          >
+            Philosophy
+          </h2>
+          <div
+            class="editorial-line text-lg text-[var(--text-muted)] space-y-10 font-light"
+          >
+            <p>
+              I believe that design is not just a solution to a problem, but a
+              silent dialogue between the creator and the user. My approach is
+              rooted in the "less is more" ideology—not as a stylistic choice,
+              but as a commitment to removing friction and noise.
+            </p>
+            <p>
+              With nearly a decade of experience, I’ve learned that the most
+              complex challenges often require the simplest executions. Whether
+              I'm architecting a design system or refining a micro-interaction,
+              my goal remains the same: to create products that feel as though
+              they've always existed.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-5xl mx-auto px-8 mb-40">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div class="md:col-span-4">
+            <h2
+              class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400 sticky top-32"
+            >
+              Career Journey
+            </h2>
+          </div>
+          <div
+            class="md:col-span-8 space-y-16 border-l border-neutral-200 pl-12 relative"
+          >
+            <div class="relative group">
+              <div class="timeline-dot"></div>
+              <span
+                class="text-[11px] uppercase tracking-widest text-neutral-400 font-bold mb-3 block"
+                >2021 — Present</span
+              >
+              <h3 class="text-xl serif-title mb-4">
+                Senior Product Designer, Global Workspace
+              </h3>
+              <p class="editorial-line text-neutral-500 font-light max-w-xl">
+                Architecting scalable design languages for productivity tools
+                used by millions. Focused on bridging the gap between high-level
+                brand strategy and granular interface components.
+              </p>
+            </div>
+            <div class="relative group">
+              <div class="timeline-dot"></div>
+              <span
+                class="text-[11px] uppercase tracking-widest text-neutral-400 font-bold mb-3 block"
+                >2018 — 2021</span
+              >
+              <h3 class="text-xl serif-title mb-4">Lead UI/UX Consultant</h3>
+              <p class="editorial-line text-neutral-500 font-light max-w-xl">
+                Partnered with emerging startups in the fintech and healthtech
+                sectors to define their MVP visual languages and user experience
+                frameworks.
+              </p>
+            </div>
+            <div class="relative group">
+              <div class="timeline-dot"></div>
+              <span
+                class="text-[11px] uppercase tracking-widest text-neutral-400 font-bold mb-3 block"
+                >2015 — 2018</span
+              >
+              <h3 class="text-xl serif-title mb-4">
+                Junior Interaction Designer
+              </h3>
+              <p class="editorial-line text-neutral-500 font-light max-w-xl">
+                Cut my teeth at a boutique creative studio, mastering the
+                fundamental principles of typography, grid systems, and motion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-5xl mx-auto px-8 mb-40">
+        <div class="border-y border-neutral-200 py-24">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div class="space-y-4">
+              <h4
+                class="text-xs uppercase tracking-[0.2em] font-bold text-neutral-800"
+              >
+                01. Empathy
+              </h4>
+              <p class="text-sm editorial-line text-neutral-500 font-light">
+                The user is the epicenter. I design for people, not for screens,
+                ensuring every decision is backed by human behavior.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <h4
+                class="text-xs uppercase tracking-[0.2em] font-bold text-neutral-800"
+              >
+                02. Rigor
+              </h4>
+              <p class="text-sm editorial-line text-neutral-500 font-light">
+                Meticulous attention to detail. I believe the difference between
+                good and exceptional design lies in the final 10% of polish.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <h4
+                class="text-xs uppercase tracking-[0.2em] font-bold text-neutral-800"
+              >
+                03. Scalability
+              </h4>
+              <p class="text-sm editorial-line text-neutral-500 font-light">
+                Building for the future. I create robust, modular systems that
+                evolve alongside the business and its users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-5xl mx-auto px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8"
+        >
+          <div class="max-w-md">
+            <h2
+              class="text-xs uppercase tracking-[0.3em] font-bold text-neutral-400 mb-6"
+            >
+              Education &amp; Credentials
+            </h2>
+            <div class="space-y-2">
+              <p class="text-neutral-800 font-medium">
+                Bachelor of Design, Interaction Design
+              </p>
+              <p class="text-sm text-neutral-500 font-light italic serif-title">
+                National Institute of Design, Class of 2015
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-12 grayscale opacity-60">
+            <span class="material-symbols-outlined text-4xl"
+              >workspace_premium</span
+            >
+            <span class="material-symbols-outlined text-4xl">school</span>
+            <span class="material-symbols-outlined text-4xl">verified</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white border-t border-neutral-100 pt-24 pb-12">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="mb-24 text-center md:text-left">
+          <h2 class="serif-title text-4xl md:text-6xl mb-8 font-light italic">
+            Let's create something meaningful.
+          </h2>
+          <a
+            class="text-xl md:text-2xl border-b border-black pb-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] transition-all"
+            href="mailto:hello@pradeep.design"
+            >hello@pradeep.design</a
+          >
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-neutral-100 gap-8"
+        >
+          <div class="text-[11px] tracking-[0.2em] uppercase font-bold">
+            Pradeep <span class="text-neutral-400">© 2024</span>
+          </div>
+          <div
+            class="flex gap-10 text-[11px] tracking-[0.2em] uppercase font-bold text-neutral-500"
+          >
+            <a class="hover:text-black transition-colors" href="#">LinkedIn</a>
+            <a class="hover:text-black transition-colors" href="#">Dribbble</a>
+            <a class="hover:text-black transition-colors" href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
