@@ -23,3 +23,6 @@ feat(frontend): initialize frontend project with Next.js, TypeScript, and Tailwi
 
 ## 4 : Updated docs
 docs: update README with new projects page details and Next.js setup instructions
+
+## 5 : Improved SEO 
+feat: update README with projects page details and enhance layout metadata
