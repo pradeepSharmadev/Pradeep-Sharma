@@ -129,7 +129,40 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Pradeep Sharma",
+              jobTitle: "Full Stack Developer",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "India",
+              },
+              url: "https://pradeep-sharma.vercel.app",
+              sameAs: [
+                "https://www.linkedin.com/in/pradeepsharma01",
+                "https://github.com/pradeepSharmadev",
+              ],
+              knowsAbout: [
+                "JavaScript",
+                "React.js",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "MySQL",
+                "Python",
+                "UI/UX Design",
+              ],
+            }),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
