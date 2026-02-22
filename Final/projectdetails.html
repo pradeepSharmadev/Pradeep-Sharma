@@ -1,0 +1,584 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Full Stack Case Study — Pradeep</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6366f1",
+              "background-light": "#ffffff",
+              "background-dark": "#0a0a0a",
+            },
+            fontFamily: {
+              serif: ["Playfair Display", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      :root {
+        --bg-color: #fafafa;
+        --text-main: #1a1a1a;
+        --text-muted: #666666;
+        --accent-soft: #f0edff;
+        --accent-purple: #9d8df1;
+        --border-color: #e5e5e5;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        letter-spacing: -0.01em;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-font {
+        font-family: "Playfair Display", serif;
+      }
+      .nav-link {
+        @apply relative py-1 text-sm tracking-widest uppercase font-medium transition-colors duration-300;
+      }
+      .nav-link::after {
+        content: "";
+        @apply absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--border-color)] transition-all duration-300;
+      }
+      .nav-link:hover::after {
+        @apply w-full;
+      }
+      .editorial-container {
+        @apply max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24;
+      }
+      .section-spacing {
+        @apply py-24 md:py-32;
+      }
+      .link-minimal {
+        @apply flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold hover:opacity-60 transition-opacity;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100"
+  >
+    <header
+      id="navbar"
+      class="fixed top-0 w-full z-50 mix-blend-difference transition-all duration-300"
+    >
+      <div
+        class="max-w-[1440px] mx-auto px-8 md:px-16 h-24 flex items-center justify-between"
+      >
+        <div>
+          <a
+            class="text-xl text-white font-semibold tracking-tighter serif-font"
+            href="/Final/home.html"
+            >Pradeep<span class="text-[var(--accent-purple)]">.</span></a
+          >
+        </div>
+        <div class="flex items-center gap-8">
+          <nav class="hidden md:flex items-right gap-12 text-white">
+            <div class="hidden md:flex items-center gap-12">
+              <a class="nav-link" href="/final/about.html">About</a>
+              <a class="nav-link" href="/final/projects.html">Work</a>
+              <a class="nav-link" href="/final/projectdetails.html">Case-Study</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+            <div class="md:hidden">
+              <span class="material-symbols-outlined">menu</span>
+            </div>
+          </nav>
+          <button
+            class="text-white p-2"
+            onclick="document.documentElement.classList.toggle('dark')"
+          >
+            <span class="material-symbols-outlined !text-[20px]">contrast</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="relative h-screen w-full overflow-hidden flex items-end">
+        <div class="absolute inset-0 z-0">
+          <img
+            alt="Project Hero"
+            class="w-full h-full object-cover scale-105"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1gvh6Qnhm3A-CO6ZXuHuZObT38Q7qnk8ttFEGDiwwplBu2Y-S2M32Pr_MPX6coA3Aov4Gwy_9-hJTLIKAW_HD-1RqnBeRzT33X_DW906gnh5kQ0xW39-AU1mOR1uEsB7-RLm029lM2P_sKN1d45pJQHz5CMpRbdZ4GHd6pxpdVo9XXXkbDNbz_7tLI1eh4PPQoG19fPBx9pVVe-peDxlhmEt_f_gmmvf4lbrU7ayKG3g57RcvdpFvHVrThVZCe2lFqsu_ztSplw"
+          />
+          <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        <div class="relative z-10 w-full pb-24 editorial-container">
+          <div class="max-w-4xl">
+            <h1
+              class="text-6xl md:text-8xl lg:text-9xl text-white leading-tight mb-8"
+            >
+              College Networking <br />Days
+            </h1>
+            <div class="flex gap-8 mt-12">
+              <a class="link-minimal text-white" href="#">
+                View Repository
+                <span class="material-symbols-outlined !text-sm"
+                  >arrow_outward</span
+                >
+              </a>
+              <a class="link-minimal text-white" href="#">
+                Live Site
+                <span class="material-symbols-outlined !text-sm"
+                  >arrow_outward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-spacing editorial-container">
+        <div class="grid lg:grid-cols-12 gap-16">
+          <div class="lg:col-span-4">
+            <div class="sticky top-32 space-y-12">
+              <div>
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold"
+                >
+                  Role
+                </h4>
+                <p class="text-sm">Full Stack Developer</p>
+              </div>
+              <div>
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold"
+                >
+                  Stack
+                </h4>
+                <p class="text-sm">MERN (MongoDB, Express, React, Node)</p>
+              </div>
+              <div>
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold"
+                >
+                  Timeline
+                </h4>
+                <p class="text-sm">4 Months</p>
+              </div>
+              <div>
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold"
+                >
+                  Client
+                </h4>
+                <p class="text-sm">Internal University Project</p>
+              </div>
+              <div class="pt-8 border-t border-slate-300 dark:border-slate-800">
+                <h4
+                  class="text-[10px] uppercase tracking-widest text-slate-400 mb-4 font-bold"
+                >
+                  Reliability
+                </h4>
+                <ul
+                  class="text-xs space-y-3 text-slate-600 dark:text-slate-400"
+                >
+                  <li class="flex items-center gap-2">
+                    <span class="w-1 h-1 bg-primary rounded-full"></span> Unit
+                    Testing with Jest
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1 h-1 bg-primary rounded-full"></span> CI/CD
+                    with GitHub Actions
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1 h-1 bg-primary rounded-full"></span>
+                    Deployed on AWS &amp; Vercel
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-8 space-y-32">
+            <article>
+              <h2 class="text-4xl md:text-5xl mb-10 leading-tight">
+                Engineering a scalable hub for academic and industry synergy.
+              </h2>
+              <div
+                class="prose prose-slate prose-lg dark:prose-invert max-w-none space-y-8 text-slate-600 dark:text-slate-400"
+              >
+                <p>
+                  The core objective was to build a robust, high-performance
+                  platform that handles real-time interactions between students
+                  and industry professionals. This required a deep dive into
+                  scalable system design and efficient data management.
+                </p>
+                <div class="mt-12">
+                  <h3
+                    class="text-slate-900 dark:text-slate-100 text-sm uppercase tracking-widest font-bold mb-6"
+                  >
+                    Technical Challenges
+                  </h3>
+                  <div class="space-y-6">
+                    <div>
+                      <h4
+                        class="text-lg font-serif italic text-slate-800 dark:text-slate-200"
+                      >
+                        State Management Complexity
+                      </h4>
+                      <p class="text-base mt-2">
+                        Managing multi-step registration flows and persistent
+                        real-time notifications across the client-side without
+                        compromising performance.
+                      </p>
+                    </div>
+                    <div>
+                      <h4
+                        class="text-lg font-serif italic text-slate-800 dark:text-slate-200"
+                      >
+                        API Optimization
+                      </h4>
+                      <p class="text-base mt-2">
+                        Implementing advanced indexing in MongoDB and leveraging
+                        Redis caching to reduce latency on high-traffic
+                        mentorship matching endpoints.
+                      </p>
+                    </div>
+                    <div>
+                      <h4
+                        class="text-lg font-serif italic text-slate-800 dark:text-slate-200"
+                      >
+                        Security Implementation
+                      </h4>
+                      <p class="text-base mt-2">
+                        Enforcing strict JWT-based authentication and CORS
+                        policies while ensuring data integrity through
+                        server-side validation schemas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <figure class="dark:bg-[#0a0a0a] p-8 md:p-16">
+              <img
+                alt="System Architecture Overview"
+                class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4K91jWGz5jHS5uxMLl8nyhctk_jRHOq950LCgpBbRGdd-yrB4xW7pSpobZzZ-a8iNC8cUtfRIshGw8N13wbD9SwBNcwno8urC3kMRG9990xixXPecjY76lJLizyX2ofYO811mTMPe_M6mUtQ_wq3vvtXgD4jMWM9rPbdKdwJA3qEErXD-JwIxrbgb_zx0geYtTUeeajd7srRhX26lTM87vfuNEVDEMLql4DDO8cLVZDCxZ9D_ELIgWQkvGFT0nNu5BTpboi-cVA"
+              />
+            </figure>
+            <article>
+              <h2
+                class="text-3xl uppercase tracking-widest font-bold mb-16 text-slate-300 dark:text-slate-700"
+              >
+                Engineering Process
+              </h2>
+              <div class="space-y-16">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8 items-start"
+                >
+                  <span class="text-4xl font-serif italic text-primary"
+                    >01.</span
+                  >
+                  <div>
+                    <h3
+                      class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100"
+                    >
+                      Schema Design
+                    </h3>
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      Modeling the data relationships in MongoDB to support
+                      complex queries for the mentorship matching engine.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8 items-start"
+                >
+                  <span class="text-4xl font-serif italic text-primary"
+                    >02.</span
+                  >
+                  <div>
+                    <h3
+                      class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100"
+                    >
+                      Backend Development
+                    </h3>
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      Developing a RESTful API with Node.js and Express,
+                      focusing on modular controllers and middleware for
+                      logging.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8 items-start"
+                >
+                  <span class="text-4xl font-serif italic text-primary"
+                    >03.</span
+                  >
+                  <div>
+                    <h3
+                      class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100"
+                    >
+                      Frontend Integration
+                    </h3>
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      Building a responsive React SPA with Redux for predictable
+                      state management and Tailwind for atomic styling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <h2
+                class="text-3xl uppercase tracking-widest font-bold mb-16 text-slate-300 dark:text-slate-700"
+              >
+                Architecture &amp; Tech Stack
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary"
+                      >dns</span
+                    >
+                    <h4 class="font-bold">Backend &amp; API</h4>
+                  </div>
+                  <p
+                    class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                  >
+                    Node/Express serves as the core engine, utilizing REST APIs
+                    to handle student data and mentorship logic. Implemented
+                    custom middleware for authentication and error handling.
+                  </p>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary"
+                      >database</span
+                    >
+                    <h4 class="font-bold">Data Management</h4>
+                  </div>
+                  <p
+                    class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                  >
+                    MongoDB Atlas for scalable, document-oriented storage.
+                    Optimized for read-heavy operations using strategic indexing
+                    and aggregation pipelines.
+                  </p>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary"
+                      >layers</span
+                    >
+                    <h4 class="font-bold">Frontend Ecosystem</h4>
+                  </div>
+                  <p
+                    class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                  >
+                    React for the user interface, utilizing Hooks and Context
+                    API for localized state, and Redux Toolkit for global data
+                    synchronization.
+                  </p>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary"
+                      >cloud_done</span
+                    >
+                    <h4 class="font-bold">DevOps &amp; Cloud</h4>
+                  </div>
+                  <p
+                    class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                  >
+                    Automated deployments via GitHub Actions. Frontend hosted on
+                    Vercel, with backend services orchestrated on AWS EC2
+                    instances.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <figure class="dark:bg-[#0a0a0a] p-8 md:p-16">
+              <img
+                alt="Interface Design Mockups"
+                class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzpaewA8kUA3pGWqE2WwymReT8pldkGMEa6Zd1U_F_C2n6-E1xkGhr3VZVGQFubFEygil0pDA3F7BZ9emYrU6HH_M7gyB7nYNrbGkdqprEV8o4my1iWkK4zf3rULtcNqHWQI_KCN_EM4E4k8jHgc_6Bjj_5-KWT_BftD_Srlx3KH6pzLd2yxjk456YEK4iCD9KRjqBvnUVJGeih5fqfIs36Y1h_eNc3YnYCHUeHCXo6nD_ubYUr5li1kWXLHqbejuW1gL0HeDn1A"
+              />
+            </figure>
+            <article>
+              <h2 class="text-4xl md:text-5xl mb-10 leading-tight">
+                Project Impact
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div
+                  class="border-l border-slate-200 dark:border-slate-800 pl-8 py-4"
+                >
+                  <span class="block text-4xl font-serif mb-2">40%</span>
+                  <p class="text-sm text-slate-500 uppercase tracking-wider">
+                    Load Time Improvement
+                  </p>
+                </div>
+                <div
+                  class="border-l border-slate-200 dark:border-slate-800 pl-8 py-4"
+                >
+                  <span class="block text-4xl font-serif mb-2">99.9%</span>
+                  <p class="text-sm text-slate-500 uppercase tracking-wider">
+                    System Uptime
+                  </p>
+                </div>
+              </div>
+            </article>
+            <div class="pt-20 border-t border-slate-100 dark:border-slate-900">
+              <h4
+                class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-8"
+              >
+                Engineering Toolkit
+              </h4>
+              <div class="flex flex-wrap gap-x-8 gap-y-4">
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >React.js</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >Node.js</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >Express</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >MongoDB</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >Redux</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >AWS</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >Jest</span
+                >
+                <span
+                  class="text-sm font-medium px-4 py-2 bg-slate-50 dark:bg-slate-900 rounded"
+                  >Docker</span
+                >
+              </div>
+              <div
+                class="flex gap-12 mt-16 pt-12 border-t border-slate-100 dark:border-slate-900"
+              >
+                <a class="link-minimal" href="#">
+                  View Github
+                  <span class="material-symbols-outlined !text-sm"
+                    >arrow_outward</span
+                  >
+                </a>
+                <a class="link-minimal" href="#">
+                  Open Live Demo
+                  <span class="material-symbols-outlined !text-sm"
+                    >arrow_outward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="border-t border-slate-100 dark:border-slate-900 mt-20">
+        <a
+          class="group block py-32 editorial-container hover:bg-slate-50 dark:hover:bg-[#0a0a0a] transition-colors"
+          href="#"
+        >
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-8"
+          >
+            <div>
+              <span
+                class="text-[10px] uppercase tracking-[0.3em] text-slate-400 mb-4 block"
+                >Next Project</span
+              >
+              <h2
+                class="text-5xl md:text-7xl lg:text-8xl group-hover:italic transition-all duration-500"
+              >
+                EduTech Portal
+              </h2>
+            </div>
+            <div
+              class="w-16 h-16 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all duration-500"
+            >
+              <span class="material-symbols-outlined !text-3xl"
+                >arrow_forward</span
+              >
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer
+      class="py-16 editorial-container border-t border-slate-100 dark:border-slate-900"
+    >
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <p class="text-[10px] uppercase tracking-widest text-slate-400">
+          © 2024 Pradeep — Full Stack Engineer
+        </p>
+        <div class="flex gap-8">
+          <a
+            class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors"
+            href="#"
+            >GitHub</a
+          >
+          <a
+            class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors"
+            href="#"
+            >LinkedIn</a
+          >
+          <a
+            class="text-[10px] uppercase tracking-widest hover:text-primary transition-colors"
+            href="#"
+            >Twitter</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll Behaviors -->
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 700) {
+          navbar.classList.add("bg-[var(--bg-color)]/80", "backdrop-blur-md");
+        } else {
+          navbar.classList.remove(
+            "bg-[var(--bg-color)]/80",
+            "backdrop-blur-md",
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

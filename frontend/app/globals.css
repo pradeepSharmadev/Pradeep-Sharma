@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #fafafa;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --accent-soft: #f0edff;
+  --accent-purple: #9d8df1;
+  --border-color: #e5e5e5;
+}
+/* It is only when you choose only device preference */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1a1a;
+    --text-main: #fafafa;
+    --text-muted: #666666;
+    --accent-soft: #f0edff;
+    --accent-purple: #9d8df1;
+    --border-color: #333333;
+  }
+} */
+.dark {
+  --bg-color: #1a1a1a;
+  --text-main: #fafafa;
+  --text-muted: #666666;
+  --accent-soft: #1e293b;
+  --accent-purple: #9d8df1;
+  --border-color: #333333;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+.serif-font {
+  font-family: "Playfair Display", serif;
+}
+.section-padding {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+@layer components {
+  .nav-link {
+    @apply relative py-1 text-sm tracking-widest uppercase font-medium transition-colors duration-300;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-0 h-[1px] bg-[var(--text-main)] transition-all duration-300;
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  .contact-input {
+    @apply w-full bg-transparent border-t-0 border-x-0 border-b border-[var(--input-border)] px-0 py-3 focus:ring-0 focus:border-[var(--accent-purple)] transition-colors duration-300 outline-none text-lg font-light;
+  }
+  .contact-label {
+    @apply block text-xs font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] mb-2;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 200,
+    "GRAD" 0,
+    "opsz" 48;
+}
+.project-card img {
+  transition: transform 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.project-card:hover img {
+  transform: scale(1.03);
+}
