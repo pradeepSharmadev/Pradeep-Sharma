@@ -26,3 +26,6 @@ docs: update README with new projects page details and Next.js setup instruction
 
 ## 5 : Improved SEO 
 feat: update README with projects page details and enhance layout metadata
+
+## 6 : Added About
+feat: enhance About page with new components and layout, improve global styles

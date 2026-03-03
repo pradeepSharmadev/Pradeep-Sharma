@@ -11,9 +11,13 @@ const Hero = () => {
               Hello, I'm <br />
               Pradeep.
             </h1>
-            <p className="text-xl md:text-2xl text-[var(--text-muted)] font-light max-w-xl leading-relaxed">
-              I create intentional, high-fidelity digital experiences that
-              bridge the gap between human emotion and technical precision.
+            <p className="text-lg md:text-xl text-[var(--text-muted)] font-light max-w-xl leading-relaxed">
+              Full Stack Developer specializing in the{" "}
+              <span className="text-[var(--text-main)] font-medium">
+                MERN stack
+              </span>
+              . Building scalable, high-performance web applications with a
+              focus on clean architecture and editorial user experiences.
             </p>
           </div>
           <div className="flex gap-8">

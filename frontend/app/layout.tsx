@@ -129,7 +129,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`antialiased`}>
+      <body
+        className={`antialiased selection:bg-indigo-100 selection:text-indigo-900`}
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
