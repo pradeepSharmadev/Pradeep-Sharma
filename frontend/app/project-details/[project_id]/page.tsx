@@ -1,4 +1,9 @@
-import React from 'react'
+import Footer from "@/components/Footer";
+import Content from "@/components/projectDetails/Content";
+import ProjectHero from "@/components/projectDetails/ProjectHero";
+import React from "react";
+import Navbar from './../../../components/projectDetails/Navbar';
+import NavigateNext from "@/components/projectDetails/NavigateNext";
 
 interface Props {
   params: Promise<{
@@ -8,7 +13,17 @@ interface Props {
 
 const page = async ({ params }: Props) => {
   const { project_id } = await params;
-  return <div>Project ID is {project_id}</div>;
+  return (
+    <>
+      <Navbar />
+      <main>
+        <ProjectHero />
+        <Content />
+        <NavigateNext />
+      </main>
+      <Footer />
+    </>
+  );
 };
 
-export default page
+export default page;

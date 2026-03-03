@@ -32,3 +32,6 @@ feat: enhance About page with new components and layout, improve global styles
 
 ## 7 Added Work
 feat: add new components for Works section, including Projects, ProjectsFilter, WorkHero, WorkProcess, and Workconnect; update global styles and remove redundant links
+
+## 8 Added Project Details
+feat: implement project details page with new components including Navbar, ProjectHero, Content, NavigateNext, and Footer; update ProjectsFilter styles and add project hero image
