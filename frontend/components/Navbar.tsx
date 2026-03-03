@@ -70,14 +70,14 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              href="/projects"
+              href="/works"
               onClick={() => setIsOpen(false)}
               className="nav-link"
             >
               Work
             </Link>
             <Link
-              href="/projectdetails"
+              href="/project-details/1"
               onClick={() => setIsOpen(false)}
               className="nav-link"
             >
