@@ -29,3 +29,6 @@ feat: update README with projects page details and enhance layout metadata
 
 ## 6 : Added About
 feat: enhance About page with new components and layout, improve global styles
+
+## 7 Added Work
+feat: add new components for Works section, including Projects, ProjectsFilter, WorkHero, WorkProcess, and Workconnect; update global styles and remove redundant links

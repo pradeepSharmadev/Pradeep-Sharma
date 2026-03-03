@@ -37,17 +37,6 @@ const Works = () => {
                 Redefining personal wellness through a minimalist mobile
                 ecosystem.
               </p>
-              <div className="flex gap-8">
-                <a
-                  className="inline-flex text-xs items-center gap-2 font-medium uppercase tracking-widest border-b border-[var(--text-main)] pb-1 pt-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] hover:scale-105 transition-transform duration-300"
-                  href="#portfolio"
-                >
-                  View Case Studies
-                  <span className="material-symbols-outlined text-lg">
-                    arrow_outward
-                  </span>
-                </a>
-              </div>
             </div>
           </div>
           <div className="project-card group cursor-pointer md:mt-32">
@@ -70,17 +59,6 @@ const Works = () => {
               <p className="text-[var(--text-muted)] font-light max-w-md">
                 Complexity distilled into a seamless dashboard experience.
               </p>
-              <div className="flex gap-8">
-                <a
-                  className="inline-flex text-xs items-center gap-2 font-medium uppercase tracking-widest border-b border-[var(--text-main)] pb-1 pt-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] hover:scale-105 transition-transform duration-300"
-                  href="#portfolio"
-                >
-                  View Case Studies
-                  <span className="material-symbols-outlined text-lg">
-                    arrow_outward
-                  </span>
-                </a>
-              </div>
             </div>
           </div>
           <div className="project-card group cursor-pointer">
@@ -103,17 +81,6 @@ const Works = () => {
               <p className="text-[var(--text-muted)] font-light max-w-md">
                 Bringing the world closer with community-led exploration tools.
               </p>
-              <div className="flex gap-8">
-                <a
-                  className="inline-flex text-xs items-center gap-2 font-medium uppercase tracking-widest border-b border-[var(--text-main)] pb-1 pt-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] duration-300 hover:scale-105 transition-transform "
-                  href="#portfolio"
-                >
-                  View Case Studies
-                  <span className="material-symbols-outlined text-lg">
-                    arrow_outward
-                  </span>
-                </a>
-              </div>
             </div>
           </div>
           <div className="project-card group cursor-pointer md:mt-32">
@@ -136,17 +103,6 @@ const Works = () => {
               <p className="text-[var(--text-muted)] font-light max-w-md">
                 A spatial design system for digital creators and studios.
               </p>
-              <div className="flex gap-8">
-                <a
-                  className="inline-flex text-xs items-center gap-2 font-medium uppercase tracking-widest border-b border-[var(--text-main)] pb-1 pt-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] duration-300 hover:scale-105 transition-transform "
-                  href="#portfolio"
-                >
-                  View Case Studies
-                  <span className="material-symbols-outlined text-lg">
-                    arrow_outward
-                  </span>
-                </a>
-              </div>
             </div>
           </div>
         </div>

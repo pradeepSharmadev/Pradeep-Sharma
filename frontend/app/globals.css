@@ -4,6 +4,7 @@
 
 :root {
   --bg-color: #fafafa;
+  --bg-color-secondary: #202028;
   --text-main: #1a1a1a;
   --text-muted: #666666;
   --accent-soft: #f0edff;
@@ -23,6 +24,7 @@
 } */
 .dark {
   --bg-color: #1a1a1a;
+  --bg-color-secondary: #222222;
   --text-main: #fafafa;
   --text-muted: #666666;
   --accent-soft: #1e293b;
@@ -79,6 +81,18 @@ h3,
   left: -53px;
   top: 0;
 }
+.staggered-grid > div:nth-child(even) {
+  margin-top: 6rem;
+}
+@media (max-width: 768px) {
+  .staggered-grid > div:nth-child(even) {
+    margin-top: 0;
+  }
+}
+.filter-link.active {
+  color: var(--accent-purple);
+  border-bottom: 2px solid var(--accent-purple);
+}
 
 @layer components {
   .nav-link {
@@ -96,6 +110,11 @@ h3,
   }
   .contact-label {
     @apply block text-xs font-bold uppercase tracking-[0.2em] text-[var(--text-muted)] mb-2;
+  }
+  @media (max-width: 768px) {
+    .staggered-grid > div:nth-child(even) {
+      margin-top: 0;
+    }
   }
 }
 
