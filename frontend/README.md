@@ -35,3 +35,6 @@ feat: add new components for Works section, including Projects, ProjectsFilter, 
 
 ## 8 Added Project Details
 feat: implement project details page with new components including Navbar, ProjectHero, Content, NavigateNext, and Footer; update ProjectsFilter styles and add project hero image
+
+## 9 Added updated Images
+feat: add new image assets including favicons and profile images for improved branding
