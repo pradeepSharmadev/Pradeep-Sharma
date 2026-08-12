@@ -10,21 +10,20 @@ const Philosophy = () => {
         <span className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--accent-purple)]">
           The Philosophy
         </span>
-        <h2
-          className="text-4xl md:text-6xl serif-font leading-tight space-y-7 text-[var(--text-main)]"
-        >
-          Design is the quiet language of functionality and aesthetics.
+        <h2 className="text-4xl md:text-5xl serif-font leading-tight space-y-7 text-[var(--text-main)]">
+          Building systems that work. Designing experiences that feel right.
         </h2>
         <div className="space-y-6 text-lg text-[var(--text-muted)] font-light leading-relaxed">
           <p>
-            I believe that great design doesn't shout; it guides. My approach is
-            rooted in reductionism—removing the unnecessary until only the
-            essential remains. This ensures that every interaction is meaningful
-            and every visual element serves a purpose.
+            I don't see design and development as separate disciplines. I use
+            principles of hierarchy, spacing, typography, composition and
+            interaction to build interfaces that are not only technically
+            robust, but also intuitive and enjoyable to use.
           </p>
           <p>
-            By blending rigorous user research with a sophisticated visual
-            palette, I build interfaces that feel both modern and timeless.
+            Whether it's a payment flow, real-time communication system, or
+            complex dashboard, I focus on making the underlying technology
+            reliable while keeping the experience simple and intuitive
           </p>
         </div>
       </div>

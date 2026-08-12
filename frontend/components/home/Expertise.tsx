@@ -8,40 +8,38 @@ const Expertise = () => {
     >
       <div className="max-w-[1440px] mx-auto px-8 md:px-16">
         <div className="space-y-4 mb-16">
-          <h2 className="text-5xl md:text-7xl serif-font">Expertise</h2>
+          <h2 className="text-5xl md:text-7xl serif-font">What I Build</h2>
           <p className="text-[var(--text-muted)] font-light text-lg">
-            Focused on the full spectrum of web development.
+            Focused on building production-ready applications
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           <div className="space-y-6 pt-8 border-t border-[var(--border-color)]">
-            <h3 className="text-2xl serif-font">UI/UX Design</h3>
+            <h3 className="text-2xl serif-font">Frontend Engineering</h3>
             <p className="text-[var(--text-muted)] font-light leading-relaxed">
-              Designing user-centric interfaces and comprehensive wireframes for
-              complex web applications, focusing on intuitive navigation and
-              accessibility.
+              Creating responsive, accessible and performant interfaces with
+              modern React and CSS architecture.
             </p>
           </div>
           <div className="space-y-6 pt-8 border-t border-[var(--border-color)]">
-            <h3 className="text-2xl serif-font">Front-end</h3>
+            <h3 className="text-2xl serif-font">Backend & APIs</h3>
             <p className="text-[var(--text-muted)] font-light leading-relaxed">
-              Architecting responsive, interactive user interfaces using
-              React.js and modern styling frameworks like Tailwind CSS for
-              high-performance delivery.
+              Designing secure REST APIs, authentication systems, database
+              architecture and scalable server-side applications.
             </p>
           </div>
           <div className="space-y-6 pt-8 border-t border-[var(--border-color)]">
-            <h3 className="text-2xl serif-font">Back-end</h3>
+            <h3 className="text-2xl serif-font">Design Systems & UI/UX</h3>
             <p className="text-[var(--text-muted)] font-light leading-relaxed">
-              Engineering secure and scalable RESTful APIs within the MERN stack
-              environment using Node.js, Express, and MongoDB.
+              Applying typography, spacing, hierarchy, color, composition and
+              interaction principles to create consistent, intuitive interfaces.
             </p>
           </div>
           <div className="space-y-6 pt-8 border-t border-[var(--border-color)]">
-            <h3 className="text-2xl serif-font">DevOps</h3>
+            <h3 className="text-2xl serif-font">Deployment & Infrastructure</h3>
             <p className="text-[var(--text-muted)] font-light leading-relaxed">
-              Streamlining delivery through CI/CD pipelines and managing cloud
-              deployments on AWS, Heroku, and Docker-containerized environments.
+              Working with Docker, CI/CD and cloud platforms to take
+              applications from development to production.
             </p>
           </div>
         </div>

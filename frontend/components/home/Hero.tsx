@@ -7,17 +7,19 @@ const Hero = () => {
       <div className="max-w-7xl w-full grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 space-y-12">
           <div className="space-y-6">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl leading-[0.9] font-medium serif-font">
-              Hello, I'm <br />
-              Pradeep.
-            </h1>
-            <p className="text-lg md:text-xl text-[var(--text-muted)] font-light max-w-xl leading-relaxed">
-              Full Stack Developer specializing in the{" "}
-              <span className="text-[var(--text-main)] font-medium">
-                MERN stack
+            <div className="space-y-3">
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--accent-purple)]">
+                FULL STACK DEVELOPER
               </span>
-              . Building scalable, high-performance web applications with a
-              focus on clean architecture and editorial user experiences.
+              <h1 className="text-6xl md:text-8xl lg:text-9xl leading-[0.9] font-medium serif-font">
+                Hello, I'm <br />
+                Pradeep.
+              </h1>
+            </div>
+            <p className="text-lg md:text-xl text-[var(--text-muted)] font-light max-w-xl leading-relaxed">
+              I build scalable, real-time web applications with React, Next.js,
+              Node.js and modern technologies — combining strong engineering
+              fundamentals with thoughtful UI, UX and visual design principles.
             </p>
           </div>
           <div className="flex gap-8">

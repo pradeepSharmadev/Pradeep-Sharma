@@ -8,7 +8,7 @@ const AboutHero = () => {
           About.
         </h1>
         <p className="text-2xl md:text-3xl editorial-line text-[var(--text-main)] font-light mb-16">
-          Based in Bangalore, I am a full-stack developer and designer dedicated
+          Based in Delhi, I am a full-stack developer and designer dedicated
           to the pursuit of{" "}
           <span className="italic serif-font">essential beauty</span> and
           functional clarity in digital spaces.

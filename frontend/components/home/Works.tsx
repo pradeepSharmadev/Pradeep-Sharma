@@ -11,7 +11,7 @@ const Works = () => {
           <div className="space-y-4">
             <h2 className="text-5xl md:text-7xl serif-font">Selected Work</h2>
             <p className="text-[var(--text-muted)] font-light text-lg">
-              A curation of digital products and visual identities.
+              A collection of products, systems, and experiments I've built.
             </p>
           </div>
         </div>
@@ -27,7 +27,13 @@ const Works = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <span className="text-[10px] uppercase tracking-[0.2em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
-                  Product Design
+                  Full Stack
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.2em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  Real-Time
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.2em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  System Design
                 </span>
               </div>
               <h3 className="text-3xl serif-font group-hover:italic transition-all duration-300">
