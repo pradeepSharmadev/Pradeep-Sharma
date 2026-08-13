@@ -123,6 +123,10 @@ export default function RootLayout({
       className={`scroll-smooth ${playfair.variable} ${jakarta.variable}`}
     >
       <head>
+        <meta
+          name="google-site-verification"
+          content="sjrtnP7qx0lYRrpLuTMCdjN0DoHPiC0dFYgCw6dllmk"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@200;300;400;500;600&amp;display=swap"
           rel="stylesheet"
