@@ -5,21 +5,21 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 const testimonials = [
   {
     quote:
-      "Working with Pradeep was an exercise in clarity. He has a rare ability to transform abstract business goals into elegant, intuitive digital solutions.",
-    name: "Jonathan Doe",
-    role: "Product Manager at Technova",
+      "Pradeep is a strong problem-solver and a dependable developer. He takes ownership of his work, communicates clearly, and is always focused on delivering the right solution. I'd be happy to work with him again.",
+    name: "Gaurav Karki",
+    role: "Developer & Collaborator",
   },
   {
     quote:
-      "Pradeep delivers beyond expectations. His design thinking and execution are world-class.",
-    name: "Sarah Lee",
-    role: "Founder at Creatix",
+      "Pradeep has a strong understanding of full-stack development and approaches problems with a practical mindset. He is easy to collaborate with and takes responsibility for getting things done.",
+    name: "Chirag Khandewal",
+    role: "Developer & Collaborator",
   },
   {
     quote:
-      "Professional, strategic, and incredibly detail-oriented. Highly recommended.",
-    name: "Michael Smith",
-    role: "CTO at InnovateX",
+      "Pradeep turned our idea into a complete product and took ownership far beyond writing code. His technical execution, product understanding and ability to guide the team made a real impact on InternFree.",
+    name: "Shiv Kumar Soni",
+    role: "Founder & CEO, InternFree",
   },
 ];
 

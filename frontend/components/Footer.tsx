@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
@@ -8,6 +8,33 @@ const Footer = () => {
           <h3 className="text-2xl serif-font italic">
             Thank you for visiting.
           </h3>
+
+          <div className="flex justify-left gap-4 text-sm text-[var(--text-main)]">
+            <a
+              className="hover:text-[var(--accent-purple)] hover:underline"
+              href="https://github.com/pradeepSharmadev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="hover:text-[var(--accent-purple)] hover:underline"
+              href="https://www.linkedin.com/in/pradeepsharma01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              className="hover:text-[var(--accent-purple)] hover:underline"
+              href="https://leetcode.com/u/Pradeep_kumarr_sharmaa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leetcode
+            </a>
+          </div>
           <p className="text-xs text-[var(--text-muted)] uppercase tracking-widest font-light">
             © 2026 Pradeep Sharma — All rights reserved.
           </p>
@@ -35,6 +62,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

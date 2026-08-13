@@ -11,14 +11,14 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setLoading(true);
     setSuccess(false);
@@ -49,7 +49,7 @@ const Contact = () => {
     >
       <div className="max-w-7xl mx-auto px-8 md:px-16 text-center">
         <h2 className="text-6xl md:text-9xl serif-font mb-16 leading-none">
-          Let's talk.
+          Let's Build.
         </h2>
         <div className="flex flex-col items-center gap-8">
           <a
@@ -59,14 +59,29 @@ const Contact = () => {
             pradeepsharma7319@gmail.com
           </a>
           <div className="flex justify-center gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text-muted)]">
-            <a className="nav-link" href="#">
+            <a
+              className="nav-link"
+              href="https://github.com/pradeepSharmadev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="nav-link"
+              href="https://www.linkedin.com/in/pradeepsharma01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn
             </a>
-            <a className="nav-link" href="#">
-              Dribbble
-            </a>
-            <a className="nav-link" href="#">
-              Instagram
+            <a
+              className="nav-link"
+              href="https://leetcode.com/u/Pradeep_kumarr_sharmaa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leetcode
             </a>
           </div>
         </div>

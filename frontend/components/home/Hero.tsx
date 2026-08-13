@@ -8,30 +8,34 @@ const Hero = () => {
         <div className="lg:col-span-7 space-y-12">
           <div className="space-y-6">
             <div className="space-y-3">
-              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--accent-purple)]">
-                FULL STACK DEVELOPER
+              <span className="text-xs font-bold uppercase tracking-[0.08em] text-[var(--accent-purple)]">
+                Full Stack Developer - Product Engineer
               </span>
               <h1 className="text-6xl md:text-8xl lg:text-9xl leading-[0.9] font-medium serif-font">
                 Hello, I'm <br />
                 Pradeep.
               </h1>
             </div>
-            <p className="text-lg md:text-xl text-[var(--text-muted)] font-light max-w-xl leading-relaxed">
+            <p className="text-md md:text-lg text-[var(--text-muted)] font-light max-w-xl">
               I build scalable, real-time web applications with React, Next.js,
-              Node.js and modern technologies — combining strong engineering
-              fundamentals with thoughtful UI, UX and visual design principles.
+              Node.js and TypeScript, with experience building real-time
+              systems, APIs, payments and production-ready applications.
             </p>
           </div>
-          <div className="flex gap-8">
+
+          <div className="flex gap-8 items-center">
             <a
               className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-widest border-b border-[var(--text-main)] pb-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] transition-colors duration-300"
-              href="#portfolio"
+              href="#contact"
             >
-              View Case Studies
+              Let's Work Together
               <span className="material-symbols-outlined text-lg">
                 arrow_outward
               </span>
             </a>
+          </div>
+          <div className="text-sm inline-flex border-b border-[var(--text-muted)] text-[var(--text-muted)] leading-relaxed">
+            - Available for Full-Time & Freelance Opportunities (Delhi, India)
           </div>
         </div>
         <div className="lg:col-span-5 relative">

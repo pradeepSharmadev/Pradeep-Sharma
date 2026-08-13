@@ -10,20 +10,26 @@ const Philosophy = () => {
         <span className="text-xs font-bold uppercase tracking-[0.3em] text-[var(--accent-purple)]">
           The Philosophy
         </span>
-        <h2 className="text-4xl md:text-5xl serif-font leading-tight space-y-7 text-[var(--text-main)]">
-          Building systems that work. Designing experiences that feel right.
+        <h2 className="text-5xl md:text-6xl serif-font leading-tight space-y-7 text-[var(--text-main)]">
+          I enjoy solving problems through code.
         </h2>
         <div className="space-y-6 text-lg text-[var(--text-muted)] font-light leading-relaxed">
           <p>
-            I don't see design and development as separate disciplines. I use
-            principles of hierarchy, spacing, typography, composition and
-            interaction to build interfaces that are not only technically
-            robust, but also intuitive and enjoyable to use.
+            My experience spans the entire development lifecycle - from
+            designing REST APIs and database architecture to building responsive
+            interfaces, real-time systems, payment workflows and WebRTC-based
+            experiences.
           </p>
           <p>
-            Whether it's a payment flow, real-time communication system, or
-            complex dashboard, I focus on making the underlying technology
-            reliable while keeping the experience simple and intuitive
+            At <a className="hover:text-[var(--accent-purple)] underline hover:cursor-pointer"  href="https://www.internfree.in" target="_blank" rel="noopener noreferrer">InternFree</a>, I joined when the product was still an idea and grew
+            into a role where I worked across the complete application,
+            eventually helping guide other developers and coordinate product
+            implementation
+          </p>
+          <p>
+            For me, writing code is only part of the job. Understanding the
+            problem, making the right technical decisions and taking ownership
+            of the outcome are equally important.
           </p>
         </div>
       </div>

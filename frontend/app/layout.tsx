@@ -16,22 +16,23 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const SITE_URL = "https://pradeep-sharma.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pradeep-sharma.vercel.app"),
+  metadataBase: new URL(SITE_URL),
 
   title: {
-    default:
-      "Pradeep Sharma | Full Stack Developer in India | React, Next.js, Node.js Expert",
+    default: "Pradeep Sharma | Full Stack Developer in India, New delhi",
     template: "%s | Pradeep Sharma",
   },
 
   description:
-    "Pradeep Sharma is a Full Stack Developer based in India specializing in React.js, Next.js, Node.js, Express, MongoDB, MySQL, and Python. Expert in Frontend, Backend, UI/UX Design, and scalable web applications for global clients.",
+    "Pradeep Sharma is a Full Stack Developer in India, New Delhi specializing in React, Next.js, Node.js, TypeScript, MongoDB, MySQL and scalable web applications.",
 
   keywords: [
     // Primary
     "Pradeep Sharma",
-    "Full Stack Developer India",
+    "Full Stack Developer India, New Delhi",
     "Frontend Developer India",
     "Backend Developer India",
     "UI UX Designer India",
@@ -45,14 +46,11 @@ export const metadata: Metadata = {
     "MySQL Developer",
     "Python Developer",
     "JavaScript Developer",
-    "HTML CSS Developer",
 
     // Stack targeting
     "MERN Stack Developer",
     "Full Stack JavaScript Developer",
     "Web Developer India",
-    "Hire Full Stack Developer India",
-    "Remote Developer India",
   ],
 
   authors: [{ name: "Pradeep Sharma" }],
@@ -60,33 +58,38 @@ export const metadata: Metadata = {
   publisher: "Pradeep Sharma",
 
   alternates: {
-    canonical: "https://pradeep-sharma.vercel.app",
+    canonical: "/",
   },
 
   openGraph: {
-    title:
-      "Pradeep Sharma | Full Stack Developer (React, Next.js, Node.js) | India",
+    title: "Pradeep Sharma | Full Stack Developer in India, New Delhi",
     description:
-      "India-based Full Stack Developer building scalable, modern web applications using React, Next.js, Node.js, Express, MongoDB, MySQL, and Python. Available for global projects.",
-    url: "https://pradeep-sharma.vercel.app",
-    siteName: "Pradeep Sharma Portfolio",
+      "Full Stack Developer specializing in React, Next.js, Node.js and modern web application development.",
+    url: SITE_URL,
+    siteName: "Pradeep Sharma",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Pradeep Sharma Full Stack Developer Portfolio",
+        alt: "Pradeep Sharma — Full Stack Developer",
+      },
+      {
+        url: "/profile-picture.jpeg",
+        width: 1280,
+        height: 1280,
+        alt: "Pradeep Sharma — Full Stack Developer New Delhi",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Pradeep Sharma | Full Stack Developer in India",
+    title: "Pradeep Sharma | Full Stack Developer in India, New Delhi",
     description:
-      "React, Next.js, Node.js, Express, MongoDB & Python Developer. UI/UX focused web solutions for global clients.",
+      "Full Stack Developer specializing in React, Next.js and Node.js.",
     images: ["/og-image.png"],
   },
 
@@ -143,6 +146,8 @@ export default function RootLayout({
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "India",
+                addressLocality: "New Delhi",
+                addressRegion: "Delhi",
               },
               url: "https://pradeep-sharma.vercel.app",
               sameAs: [
