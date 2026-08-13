@@ -153,6 +153,7 @@ export default function RootLayout({
               sameAs: [
                 "https://www.linkedin.com/in/pradeepsharma01",
                 "https://github.com/pradeepSharmadev",
+                "https://leetcode.com/u/Pradeep_kumarr_sharmaa",
               ],
               knowsAbout: [
                 "JavaScript",
