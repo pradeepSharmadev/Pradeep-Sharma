@@ -16,103 +16,7 @@ const Works = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-24">
-          <div className="project-card group cursor-pointer">
-            <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
-              <img
-                alt="Healthcare Platform"
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgw1afXfrNxf62ITPeXVRrSHWj7aZgUzG7FbdIsb-znGW2-WyRrF3q3mZ780TIxe6MKKMiPqPfW_avtl-K7Hvpy80EHtnnd3Ne9p0jI3Md4mztoeIV1gzPfYhNQ0eAOJWxnMaG68-k9Ft7pDSebN3z-LO8ZmtgDxeI-v2SxIRR9yVrqYM8cRt_a3HpEUTRHEoAnlg4JqBKUODXfH7hNTFCUbWPX1q-bHX2xKZGoYl06d8dcwQvhCIAvo00ezFCnuQQlzf3Gjj8og"
-              />
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center gap-3">
-                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
-                  Full Stack
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
-                  Authentication
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
-                  Real-Time
-                </span>
-              </div>
-              <h3 className="text-3xl serif-font">
-                Healthcare Platform
-              </h3>
-              <p className="text-[var(--text-muted)] font-light max-w-md">
-                Redefining personal wellness through a minimalist mobile
-                ecosystem.
-              </p>
-              <div className="flex gap-4 pt-8 text-[var(--text-main)]">
-                <a
-                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
-                  href="#"
-                >
-                  View Repository
-                  <span className="material-symbols-outlined !text-sm">
-                    arrow_outward
-                  </span>
-                </a>
-                <a
-                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
-                  href="#"
-                >
-                  Live Site
-                  <span className="material-symbols-outlined !text-sm">
-                    arrow_outward
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="project-card group cursor-pointer md:mt-32">
-            <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
-              <img
-                alt="Payment Platform"
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwH2tT53qoevWt9XcnP3uo1A2N5mL3k1-TffQRQ9ydmUCr4q7H4yMRZD-C8Nbp-XwttnTBcK_ohkJiC97FjtNNL-0QMMlWaiuMiJNWNhEOKKuXDEJvFP8mp0PvV29mOi5acWQNBSpjEuBJDmY_PLDabwtKdR2i5fg_DzI039KOQFy0tz0qS97LzWHU64UHVjnOUN44QQax2kqa1zZhm_KpTYLMkn74J54MG8aHU1n5ISYPNuhwpATWLY0h7l5kbz5cttpdsu0c8g"
-              />
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center gap-3">
-                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
-                  Full Stack
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
-                  Razorpay
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
-                  Webhooks
-                </span>
-              </div>
-              <h3 className="text-3xl serif-font">
-                Payment Platform
-              </h3>
-              <p className="text-[var(--text-muted)] font-light max-w-md">
-                Complexity distilled into a seamless dashboard experience.
-              </p>
-              <div className="flex gap-4 pt-8 text-[var(--text-main)]">
-                <a
-                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
-                  href="#"
-                >
-                  View Repository
-                  <span className="material-symbols-outlined !text-sm">
-                    arrow_outward
-                  </span>
-                </a>
-                <a
-                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
-                  href="#"
-                >
-                  Live Site
-                  <span className="material-symbols-outlined !text-sm">
-                    arrow_outward
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
+          {/* Communication Platform */}
           <div className="project-card group cursor-pointer">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
               <img
@@ -133,19 +37,18 @@ const Works = () => {
                   WebRTC
                 </span>
               </div>
-              <h3 className="text-3xl serif-font">
-                Communication Platform
-              </h3>
+              <h3 className="text-3xl serif-font">Communication Platform</h3>
               <p className="text-[var(--text-muted)] font-light max-w-md">
-                Real-time application enabling bidirectional communication
-                between users.
+                A real-time communication platform enabling instant messaging,
+                presence, and peer-to-peer audio/video communication between
+                users.
               </p>
               <div className="flex gap-4 pt-8 text-[var(--text-main)]">
                 <a
                   className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
                   href="#"
                 >
-                  View Repository
+                  View Case Study
                   <span className="material-symbols-outlined !text-sm">
                     arrow_outward
                   </span>
@@ -162,6 +65,105 @@ const Works = () => {
               </div>
             </div>
           </div>
+          {/* Payment Platform */}
+          <div className="project-card group cursor-pointer md:mt-32">
+            <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
+              <img
+                alt="Payment Platform"
+                className="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwH2tT53qoevWt9XcnP3uo1A2N5mL3k1-TffQRQ9ydmUCr4q7H4yMRZD-C8Nbp-XwttnTBcK_ohkJiC97FjtNNL-0QMMlWaiuMiJNWNhEOKKuXDEJvFP8mp0PvV29mOi5acWQNBSpjEuBJDmY_PLDabwtKdR2i5fg_DzI039KOQFy0tz0qS97LzWHU64UHVjnOUN44QQax2kqa1zZhm_KpTYLMkn74J54MG8aHU1n5ISYPNuhwpATWLY0h7l5kbz5cttpdsu0c8g"
+              />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  Full Stack
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  Razorpay
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  Webhooks
+                </span>
+              </div>
+              <h3 className="text-3xl serif-font">Payment Platform</h3>
+              <p className="text-[var(--text-muted)] font-light max-w-md">
+                A full-stack payment platform that simplifies transaction
+                workflows through secure payment processing, webhook
+                integration, and a centralized dashboard.
+              </p>
+              <div className="flex gap-4 pt-8 text-[var(--text-main)]">
+                <a
+                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
+                  href="#"
+                >
+                  View Case Study
+                  <span className="material-symbols-outlined !text-sm">
+                    arrow_outward
+                  </span>
+                </a>
+                <a
+                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
+                  href="#"
+                >
+                  Live Site
+                  <span className="material-symbols-outlined !text-sm">
+                    arrow_outward
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Healthcare Platform */}
+          <div className="project-card group cursor-pointer">
+            <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
+              <img
+                alt="Healthcare Platform"
+                className="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgw1afXfrNxf62ITPeXVRrSHWj7aZgUzG7FbdIsb-znGW2-WyRrF3q3mZ780TIxe6MKKMiPqPfW_avtl-K7Hvpy80EHtnnd3Ne9p0jI3Md4mztoeIV1gzPfYhNQ0eAOJWxnMaG68-k9Ft7pDSebN3z-LO8ZmtgDxeI-v2SxIRR9yVrqYM8cRt_a3HpEUTRHEoAnlg4JqBKUODXfH7hNTFCUbWPX1q-bHX2xKZGoYl06d8dcwQvhCIAvo00ezFCnuQQlzf3Gjj8og"
+              />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  Full Stack
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  Authentication
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.1em] font-bold py-1 px-3 bg-[var(--accent-soft)] text-[var(--text-main)]">
+                  Real-Time
+                </span>
+              </div>
+              <h3 className="text-3xl serif-font">Healthcare Platform</h3>
+              <p className="text-[var(--text-muted)] font-light max-w-md">
+                A modern healthcare platform designed to make personal wellness
+                more accessible through a secure, intuitive, and real-time
+                digital experience
+              </p>
+              <div className="flex gap-4 pt-8 text-[var(--text-main)]">
+                <a
+                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
+                  href="#"
+                >
+                  View Case Study
+                  <span className="material-symbols-outlined !text-sm">
+                    arrow_outward
+                  </span>
+                </a>
+                <a
+                  className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
+                  href="#"
+                >
+                  Live Site
+                  <span className="material-symbols-outlined !text-sm">
+                    arrow_outward
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Financial Dashboard */}
           <div className="project-card group cursor-pointer md:mt-32">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
               <img
@@ -182,18 +184,18 @@ const Works = () => {
                   APIs
                 </span>
               </div>
-              <h3 className="text-3xl serif-font">
-                Financial Dashboard
-              </h3>
+              <h3 className="text-3xl serif-font">Financial Dashboard</h3>
               <p className="text-[var(--text-muted)] font-light max-w-md">
-                A spatial design system for digital creators and studios.
+                A data-driven financial dashboard that transforms complex
+                financial information into clear, interactive visualizations and
+                actionable insights.
               </p>
               <div className="flex gap-4 pt-8 text-[var(--text-main)]">
                 <a
                   className="flex items-center gap-2 text-[12px] uppercase tracking-widest font-bold hover:opacity-90 hover:text-[var(--accent-purple)] hover:italic transition-all duration-300"
                   href="#"
                 >
-                  View Repository
+                  View Case Study
                   <span className="material-symbols-outlined !text-sm">
                     arrow_outward
                   </span>

@@ -23,17 +23,18 @@ const Hero = () => {
             </p>
             <div className="flex gap-8 items-center">
               <a
+                href="Pradeep_Sharma_Resume.pdf"
+                // download="Pradeep_Sharma_Resume.pdf"
                 className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-widest border-b border-[var(--text-main)] hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] transition-colors duration-300"
-                href="#contact"
               >
-                Let's Work Together
+                Review My Resume
                 <span className="material-symbols-outlined !text-lg">
                   arrow_outward
                 </span>
               </a>
             </div>
           </div>
-          <div className="text-sm inline-flex underline text-[var(--text-muted)] leading-relaxed">
+          <div className="text-sm inline-flex underline text-[var(--text-main)] leading-relaxed">
             - Available for Full-Time & Freelance Opportunities (Delhi, India)
           </div>
         </div>

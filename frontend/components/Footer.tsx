@@ -9,7 +9,7 @@ const Footer = () => {
             Thank you for visiting.
           </h3>
 
-          <div className="flex justify-left gap-4 text-sm text-[var(--text-main)]">
+          <div className="flex md:justify-left justify-center gap-4 text-sm text-[var(--text-main)]">
             <a
               className="hover:text-[var(--accent-purple)] hover:underline"
               href="https://github.com/pradeepSharmadev"
