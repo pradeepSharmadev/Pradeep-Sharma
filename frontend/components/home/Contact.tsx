@@ -49,7 +49,7 @@ const Contact = () => {
     >
       <div className="max-w-7xl mx-auto px-8 md:px-16 text-center">
         <h2 className="text-6xl md:text-9xl serif-font mb-16 leading-none">
-          Let's Build.
+          Let's Talk.
         </h2>
         <div className="flex flex-col items-center gap-8">
           <a

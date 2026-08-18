@@ -1,6 +1,6 @@
 import Hero from "@/components/home/Hero";
 import Navbar from "@/components/Navbar";
-import Philosophy from './../components/home/Philosophy';
+import Philosophy from "./../components/home/Philosophy";
 import Expertise from "@/components/home/Expertise";
 import Works from "@/components/home/Works";
 import Testimonial from "@/components/home/Testimonial";

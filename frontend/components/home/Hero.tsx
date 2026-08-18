@@ -21,20 +21,19 @@ const Hero = () => {
               Node.js and TypeScript, with experience building real-time
               systems, APIs, payments and production-ready applications.
             </p>
+            <div className="flex gap-8 items-center">
+              <a
+                className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-widest border-b border-[var(--text-main)] hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] transition-colors duration-300"
+                href="#contact"
+              >
+                Let's Work Together
+                <span className="material-symbols-outlined !text-lg">
+                  arrow_outward
+                </span>
+              </a>
+            </div>
           </div>
-
-          <div className="flex gap-8 items-center">
-            <a
-              className="inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-widest border-b border-[var(--text-main)] pb-2 hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] transition-colors duration-300"
-              href="#contact"
-            >
-              Let's Work Together
-              <span className="material-symbols-outlined text-lg">
-                arrow_outward
-              </span>
-            </a>
-          </div>
-          <div className="text-sm inline-flex border-b border-[var(--text-muted)] text-[var(--text-muted)] leading-relaxed">
+          <div className="text-sm inline-flex underline text-[var(--text-muted)] leading-relaxed">
             - Available for Full-Time & Freelance Opportunities (Delhi, India)
           </div>
         </div>
