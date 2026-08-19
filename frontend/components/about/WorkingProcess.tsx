@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkingProcess = () => {
   return (
-    <section className="max-w-5xl mx-auto px-8">
+    <section className="max-w-6xl mx-auto px-8">
       <div className="py-24">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
           <div className="space-y-4">

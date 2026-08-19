@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import ProjectsFilter from "@/components/Works/ProjectsFilter";
 import WorkHero from "@/components/Works/WorkHero";
 import React from "react";
 import Projects from './../../components/Works/Projects';
@@ -14,7 +13,6 @@ const page = () => {
       <Navbar />
       <main>
         <WorkHero />
-        <ProjectsFilter />
         <Projects />
         <Experiments />
         <WorkProcess />
