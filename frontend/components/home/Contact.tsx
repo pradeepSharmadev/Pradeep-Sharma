@@ -86,7 +86,13 @@ const Contact = () => {
           </div>
         </div>
         <div className="max-w-2xl mx-auto text-left pt-16">
-          <form className="space-y-12" onSubmit={handleSubmit}>
+          <form
+            className="space-y-12"
+            // action="https://api.web3forms.com/submit"
+            onSubmit={handleSubmit}
+            method="POST"
+          >
+            {/* <input type="hidden" name="access_key" value="84ee4bed-68d7-47e1-a90d-a36912015652" /> */}
             <div className="group">
               <label className="contact-label" htmlFor="fullName">
                 Full Name

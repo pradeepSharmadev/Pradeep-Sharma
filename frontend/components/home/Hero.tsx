@@ -8,9 +8,9 @@ const Hero = () => {
         <div className="lg:col-span-7 space-y-12">
           <div className="space-y-6">
             <div className="space-y-3">
-              <span className="text-xs font-bold uppercase tracking-[0.08em] text-[var(--accent-purple)]">
+              <h2 className="text-xs font-bold font-sans uppercase tracking-[0.08em] text-[var(--accent-purple)]">
                 Full Stack Developer - Product Engineer
-              </span>
+              </h2>
               <h1 className="text-6xl md:text-8xl lg:text-9xl leading-[0.9] font-medium serif-font">
                 Hello, I'm <br />
                 Pradeep.
@@ -24,6 +24,8 @@ const Hero = () => {
             <div className="flex gap-8 items-center">
               <a
                 href="Pradeep_Sharma_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 // download="Pradeep_Sharma_Resume.pdf"
                 className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-widest border-b border-[var(--text-main)] hover:text-[var(--accent-purple)] hover:border-[var(--accent-purple)] transition-colors duration-300"
               >
@@ -34,14 +36,15 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="text-sm inline-flex underline text-[var(--text-main)] leading-relaxed">
-            - Available for Full-Time & Freelance Opportunities (Delhi, India)
-          </div>
+          <h4 className="text-sm font-sans inline-flex underline text-[var(--text-main)] leading-relaxed">
+            - Available for Full-time and Freelance Opportunities in Delhi,
+            India.
+          </h4>
         </div>
         <div className="lg:col-span-5 relative">
           <div className="group relative aspect-[4/5] bg-neutral-50 rounded-sm overflow-hidden ring-1 ring-inset ring-neutral-200 transition-all duration-700">
             <Image
-              alt="Pradeep Portrait"
+              alt="Pradeep Sharma, Full Stack Developer in New Delhi"
               fill
               className="object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-700"
               src="/images/pradeep-profile.png"

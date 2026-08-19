@@ -22,12 +22,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "Pradeep Sharma | Full Stack Developer in India, New delhi",
+    default:
+      "Pradeep Sharma | Full Stack Developer in Delhi, India | React, Next.js & Node.js",
     template: "%s | Pradeep Sharma",
   },
 
   description:
-    "Pradeep Sharma is a Full Stack Developer in India, New Delhi specializing in React, Next.js, Node.js, TypeScript, MongoDB, MySQL and scalable web applications.",
+    "Pradeep Sharma is a Full Stack Developer based in Delhi, India, with 1+ year of professional development experience specializing in React, Next.js, Node.js, TypeScript, APIs, real-time applications and scalable web development.",
 
   keywords: [
     // Primary
@@ -62,9 +63,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Pradeep Sharma | Full Stack Developer in India, New Delhi",
+    title: "Pradeep Sharma | Full Stack Developer in Delhi, India",
     description:
-      "Full Stack Developer specializing in React, Next.js, Node.js and modern web application development.",
+      "Full Stack Developer specializing in React, Next.js, Node.js and modern web application development. Technologies such as React.js, Node.js, Express.js, TypeScript, MongoDB, MySQL, Socket.io, WebRTC, Razorpay uses.",
     url: SITE_URL,
     siteName: "Pradeep Sharma",
     locale: "en_IN",
@@ -74,22 +75,22 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Pradeep Sharma — Full Stack Developer",
+        alt: "Pradeep Sharma - Full Stack Developer",
       },
       {
         url: "/profile-picture.jpeg",
         width: 1280,
         height: 1280,
-        alt: "Pradeep Sharma — Full Stack Developer New Delhi",
+        alt: "Pradeep Sharma - Full Stack Developer Delhi",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Pradeep Sharma | Full Stack Developer in India, New Delhi",
+    title: "Pradeep Sharma | Full Stack Developer in Delhi, India",
     description:
-      "Full Stack Developer specializing in React, Next.js and Node.js.",
+      "Full Stack Developer specializing in React, Next.js, Node.js and modern web application development.",
     images: ["/og-image.png"],
   },
 

@@ -20,7 +20,7 @@ const Works = () => {
           <div className="project-card group cursor-pointer">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
               <img
-                alt="Communication Platform"
+                alt="Communication full stack web application built by Pradeep Sharma"
                 className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG5u3p2X4LA-1mRyDpJalYRNWpTiRuI9zDKwxOh8HdCzZeil2zh5221rKauGgvF3KZq6OyaTOsAIKflDttOAFvwCxuT8WNb5u8wKD58vsczPU452WSOAj3MnCJl_f_qqeDlZUNv7X6Wl9oGZllMPZoquueKPIj1dafA239uVHLQxakVHvcXh0sW-6gzkQ4W6V08-Dc9YBWMTeLtS8MP7I6BS7KOBIO2nRoY_Fni0N05tdBTcF-pai2o05S9c0vccoCaSUYdO775A"
               />
@@ -69,7 +69,7 @@ const Works = () => {
           <div className="project-card group cursor-pointer md:mt-32">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
               <img
-                alt="Payment Platform"
+                alt="Payment full stack web application built by Pradeep Sharma"
                 className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwH2tT53qoevWt9XcnP3uo1A2N5mL3k1-TffQRQ9ydmUCr4q7H4yMRZD-C8Nbp-XwttnTBcK_ohkJiC97FjtNNL-0QMMlWaiuMiJNWNhEOKKuXDEJvFP8mp0PvV29mOi5acWQNBSpjEuBJDmY_PLDabwtKdR2i5fg_DzI039KOQFy0tz0qS97LzWHU64UHVjnOUN44QQax2kqa1zZhm_KpTYLMkn74J54MG8aHU1n5ISYPNuhwpATWLY0h7l5kbz5cttpdsu0c8g"
               />
@@ -118,7 +118,7 @@ const Works = () => {
           <div className="project-card group cursor-pointer">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
               <img
-                alt="Healthcare Platform"
+                alt="Healthcare full stack web application built by Pradeep Sharma"
                 className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgw1afXfrNxf62ITPeXVRrSHWj7aZgUzG7FbdIsb-znGW2-WyRrF3q3mZ780TIxe6MKKMiPqPfW_avtl-K7Hvpy80EHtnnd3Ne9p0jI3Md4mztoeIV1gzPfYhNQ0eAOJWxnMaG68-k9Ft7pDSebN3z-LO8ZmtgDxeI-v2SxIRR9yVrqYM8cRt_a3HpEUTRHEoAnlg4JqBKUODXfH7hNTFCUbWPX1q-bHX2xKZGoYl06d8dcwQvhCIAvo00ezFCnuQQlzf3Gjj8og"
               />
@@ -167,7 +167,7 @@ const Works = () => {
           <div className="project-card group cursor-pointer md:mt-32">
             <div className="aspect-[16/10] overflow-hidden bg-neutral-100 mb-8 border border-[var(--border-color)]">
               <img
-                alt="Financial Dashboard"
+                alt="Finance Tracker full stack web application built by Pradeep Sharma"
                 className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuChAaw5QRBG3NeZSgDKZ-TDd7mfuVZfoNrOLRFch_7lbIWpfzcs0Lm--D2Y6CiGjB600i0arQBkZXnBhLK-BkLIDsddNNq6OKORoMQBenlvd8eAlXQiZQEh6_xZE7fuKCtXUx75TNkeOb2fJyz51B1ZSZkFxez2sEedEQ_qomCz_WUfiTzvgRS4A7ohf1Oog0hddHjFZ41zagzTM66LQVzVCAYxB1gQ7KZFtW4bwVxv2q3MtDyYX2-8EW7VImBJK-BGW_58wVxnPA"
               />

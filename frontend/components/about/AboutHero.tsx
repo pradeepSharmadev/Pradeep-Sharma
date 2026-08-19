@@ -3,20 +3,23 @@ import Image from "next/image";
 const AboutHero = () => {
   return (
     <section className="max-w-5xl mx-auto px-8 mb-32">
-      <div className="max-w-3xl">
-        <h1 className="serif-title text-[clamp(4rem,10vw,8rem)] leading-[0.9] mb-12 italic font-light tracking-tight">
-          About.
+      <div className="max-w-4xl">
+        <h1 className="serif-title max-w-4xl text-[clamp(4rem,10vw,8rem)] leading-[0.9] mb-12 italic font-light tracking-tight">
+          {/* About. */}
+          Pradeep Sharma.
         </h1>
-        <p className="text-2xl md:text-3xl editorial-line text-[var(--text-main)] font-light mb-16">
-          Based in Delhi, I am a full-stack developer and designer dedicated
-          to the pursuit of{" "}
-          <span className="italic serif-font">essential beauty</span> and
-          functional clarity in digital spaces.
-        </p>
+        <h3 className="text-xl font-sans max-w-3xl md:text-2xl text-[var(--text-main)] font-light mb-16">
+          I'm Pradeep Sharma, a Full Stack Developer based in New Delhi, India,
+          with 1+ year of professional experience building
+          <span className="italic serif-font"> Production-Ready </span> web
+          applications using React, Next.js, Node.js, TypeScript and modern
+          database technologies.
+        </h3>
       </div>
-      <div className="relative w-full aspect-[16/9] mb-24 overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700">
+      <div className="relative w-full aspect-[16/9] mb-24 overflow-hidden rounded-sm transition-all duration-700">
+        {/* grayscale hover:grayscale-0 */}
         <Image
-          alt="Atmospheric Studio Portrait"
+          alt="Pradeep Sharma | Full Stack Developer | Graduated From Sri Venkateswara College | University of Delhi | South Campus"
           fill
           className="object-center"
           src="/images/southcampus.jpg"

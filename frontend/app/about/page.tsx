@@ -13,13 +13,13 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-32 pb-40">
+      <main className="pt-32">
         <AboutHero />
         <AboutPhilosophy />
         <TechnicalExpertise />
         <CareerJourney />
-        <WorkingProcess />
         <Education />
+        <WorkingProcess />
       </main>
       <Connect />
       <Footer />

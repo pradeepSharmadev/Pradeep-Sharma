@@ -5,7 +5,7 @@ const TechnicalExpertise = () => {
     <section className="max-w-5xl mx-auto px-8 mb-40">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
-          <h2 className="text-xs sans-font uppercase tracking-[0.3em] font-bold text-[var(--accent-purple)] mb-8 md:mb-0">
+          <h2 className="text-xs sans-font uppercase tracking-[0.2em] font-bold text-[var(--accent-purple)] mb-8 md:mb-0">
             Technical Expertise
           </h2>
         </div>
@@ -16,9 +16,11 @@ const TechnicalExpertise = () => {
                 Programming
               </h3>
               <ul className="editorial-line text-neutral-500 font-light space-y-1">
-                <li>Python</li>
                 <li>JavaScript (ES6+)</li>
                 <li>TypeScript</li>
+                <li>Python</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
               </ul>
             </div>
             <div className="space-y-4">
@@ -30,6 +32,7 @@ const TechnicalExpertise = () => {
                 <li>Next.js</li>
                 <li>Redux</li>
                 <li>Tailwind CSS</li>
+                <li>Responsive Web Design</li>
               </ul>
             </div>
             <div className="space-y-4">
@@ -40,6 +43,8 @@ const TechnicalExpertise = () => {
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
                 <li>RESTful APIs</li>
               </ul>
             </div>
@@ -50,8 +55,10 @@ const TechnicalExpertise = () => {
               <ul className="editorial-line text-neutral-500 font-light space-y-1">
                 <li>Git</li>
                 <li>Docker</li>
+                <li>Postman</li>
                 <li>AWS</li>
                 <li>CI/CD</li>
+                <li>VS Code</li>
               </ul>
             </div>
           </div>
