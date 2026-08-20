@@ -129,11 +129,11 @@ const experimentProjects = [
 ];
 
 const Experiments = () => {
-  const viewportRef = useRef(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(null);
+  const [direction, setDirection] = useState<"next" | "previous" | null>(null);(null);
   const [isAnimating, setIsAnimating] = useState(false);
   const [slideDistance, setSlideDistance] = useState(0);
 
