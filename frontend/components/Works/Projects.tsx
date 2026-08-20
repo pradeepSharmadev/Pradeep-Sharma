@@ -166,8 +166,8 @@ const Projects = () => {
       });
   }, [projects, projectState]);
   return (
-    <>
-      <section className="max-w-[1440px] mx-auto px-8 md:px-16">
+    <div className="bg-[var(--bg-color)]">
+      <section className=" max-w-[1440px] mx-auto px-8 md:px-16">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 border-b border-[var(--border-color)] ">
           {/* Category Filters */}
           <div className="flex flex-wrap items-center gap-x-6 gap-y-4 text-sm font-bold uppercase tracking-widest text-[var(--text-muted)]">
@@ -319,7 +319,7 @@ const Projects = () => {
           </div>
         )}
       </section>
-    </>
+    </div>
   );
 };
 

@@ -12,7 +12,7 @@ const Connect = () => {
             I'm available for full-time and freelance opportunities in Delhi,
             India.
           </p>
-          <div className="flex flex-col gap-2 text-sm md:text-base font-light">
+          <div className="flex flex-col gap-2 items-center md:items-start text-sm md:text-base font-light">
             <a
               href="tel:+918434111639"
               className="w-fit hover:text-[var(--accent-purple)] transition-colors duration-300"

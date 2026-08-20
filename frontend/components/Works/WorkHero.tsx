@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorkHero = () => {
   return (
-    <section className="pt-56 pb-24">
+    <section className="pt-56 pb-24 bg-[var(--bg-color)]">
       <div className="max-w-[1440px] mx-auto px-8 md:px-16 mt-12 h-24 flex items-center justify-between">
         <div className="max-w-3xl">
           <h1 className="serif-title max-w-4xl text-[clamp(4rem,10vw,8rem)] leading-[0.9] mb-12 italic font-light tracking-tight">
