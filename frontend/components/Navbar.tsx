@@ -26,7 +26,10 @@ const Navbar = () => {
           <Link href="/works" className="nav-link">
             Work
           </Link>
-          <Link href="/project-details/1" className="nav-link">
+          <Link
+            href="/project-details/communication-platform"
+            className="nav-link"
+          >
             Case-Study
           </Link>
           <Link href="#contact" className="nav-link">
@@ -77,7 +80,7 @@ const Navbar = () => {
               Work
             </Link>
             <Link
-              href="/project-details/1"
+              href="/project-details/communication-platform"
               onClick={() => setIsOpen(false)}
               className="nav-link"
             >

@@ -36,7 +36,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-xs text-[var(--text-muted)] uppercase tracking-widest font-light">
-            © 2026 Pradeep Sharma — All rights reserved.
+            © {new Date().getFullYear()} Pradeep Sharma — All rights reserved.
           </p>
         </div>
         <div className="flex items-center gap-12">

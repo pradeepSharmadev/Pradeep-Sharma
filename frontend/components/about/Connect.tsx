@@ -2,7 +2,7 @@ import React from "react";
 
 const Connect = () => {
   return (
-    <section className="bg-[var(--bg-color)] border-t border-[var(--border-color)] pt-24 pb-12">
+    <section id="contact" className="bg-[var(--bg-color)] border-t border-[var(--border-color)] pt-24 pb-12">
       <div className="max-w-5xl mx-auto px-8">
         <div className="mb-24 text-center md:text-left">
           <h2 className="serif-title text-4xl md:text-6xl mb-8 font-light italic">

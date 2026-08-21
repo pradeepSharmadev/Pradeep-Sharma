@@ -1,11 +1,18 @@
 import React from 'react'
 
-const NavigateNext = () => {
+type NavigateNextProps = {
+  nextProject: {
+    slug: string;
+    title: string;
+  };
+};
+
+const NavigateNext = ({ nextProject }: NavigateNextProps) => {
   return (
-    <section className="border-t border-[var(--border-color)] mt-20">
+    <section id="contact" className="border-t border-[var(--border-color)] mt-20">
       <a
         className="group block py-32 max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 transition-colors"
-        href="#"
+        href={nextProject.slug}
       >
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
@@ -13,7 +20,7 @@ const NavigateNext = () => {
               Next Project
             </span>
             <h2 className="text-5xl md:text-7xl lg:text-8xl group-hover:italic">
-              EduTech Portal
+              {nextProject.title}
             </h2>
           </div>
           <div className="w-16 h-16 rounded-full border border-[var(--border-color)] flex items-center justify-center group-hover:bg-[var(--accent-soft)] group-hover:border-[var(--accent-soft)] group-hover:text-[var(--text-main)] transition-all duration-500">
@@ -25,6 +32,6 @@ const NavigateNext = () => {
       </a>
     </section>
   );
-}
+};
 
 export default NavigateNext
