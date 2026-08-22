@@ -35,7 +35,7 @@ export type TechStack = {
   backend: string[];
   database: string[];
   realtime?: string[];
-  infrastructure?: string[];
+  infrastructure: string[];
   testing?: string[];
 };
 
@@ -56,6 +56,7 @@ export type Project = {
   // Project information
   role: string;
   projectType?: string;
+  // i don't find use case of duration, team you can remove
   team?: string;
   duration?: string;
 
@@ -63,7 +64,7 @@ export type Project = {
   image: string;
   imageAlt: string;
   heroImage: string;
-  architectureImage?: string;
+  architectureImage: string;
 
   // Links
   caseStudy?: string;
@@ -94,7 +95,6 @@ export type Project = {
 
   // Outcome
   result: string;
-  impact: Impact[];
 
   // Navigation
   nextProject: NextProject;
@@ -113,7 +113,7 @@ export const projects: Project[] = [
 
     projectType: "Personal Project",
     team: "Solo",
-    duration: "2025",
+    duration: "4 Months",
 
     categories: ["Full Stack", "Real-Time Application", "Communication"],
     tags: [
@@ -140,7 +140,7 @@ export const projects: Project[] = [
     caseStudy: "/project-details/communication-platform",
     liveSite: "#",
     github: "#",
-    role: "Full Stack Developer — Architecture, Backend, Real-Time Systems & Frontend",
+    role: "Full Stack Developer - Architecture, Backend, Real-Time Systems & Frontend",
     overview:
       "The Communication Platform was built to create a reliable real-time environment where users can communicate through instant messaging and peer-to-peer audio/video calls. I worked across the complete application stack, from designing the backend architecture and real-time communication layer to building responsive frontend interfaces and integrating WebRTC-based media communication. The system was designed with a strong focus on performance, connection reliability, security, and maintainability.",
     responsibilities: [
@@ -153,14 +153,6 @@ export const projects: Project[] = [
       "Integrated WebRTC for peer-to-peer audio and video communication.",
       "Implemented signaling workflows required for establishing WebRTC connections.",
       "Handled call states including incoming calls, call acceptance, rejection, and termination.",
-      "Implemented JWT-based authentication and protected application routes.",
-      "Built reusable React components and responsive communication interfaces.",
-      "Used Redux Toolkit and Context API for global and localized state management.",
-      "Implemented server-side validation and centralized error handling.",
-      "Optimized real-time event handling and API communication for responsive interactions.",
-      "Designed the application with modular backend services and maintainable frontend architecture.",
-      "Configured production deployment and automated workflows using GitHub Actions.",
-      "Worked with AWS and Vercel for cloud deployment and production infrastructure.",
     ],
     problem:
       "Traditional communication experiences often require users to switch between separate tools for messaging and calls. The goal was to create a unified real-time experience where users could communicate, see presence information, and initiate audio/video conversations from a single application.",
@@ -174,8 +166,6 @@ export const projects: Project[] = [
       backend: ["Node.js", "Express", "TypeScript", "REST API", "JWT"],
 
       database: ["MongoDB"],
-
-      realtime: ["Socket.IO", "WebRTC"],
 
       infrastructure: ["AWS", "Vercel", "Docker", "GitHub Actions"],
     },
@@ -301,14 +291,8 @@ export const projects: Project[] = [
       },
     ],
     architectureImage:
-      "/images/projects/communication-platform/architecture.jpg",
+      "/images/projects/architecture.png",
     heroImage: "/images/hero-project.jpg",
-    impact: [
-      { value: "Real-Time", label: "Instant Communication" },
-      { value: "WebRTC", label: "Peer-to-Peer Calls" },
-      { value: "Socket.IO", label: "Event-Driven Architecture" },
-      { value: "Full Stack", label: "End-to-End Development" },
-    ],
     nextProject: { slug: "payment-platform", title: "Payment Platform" },
   },
   // {

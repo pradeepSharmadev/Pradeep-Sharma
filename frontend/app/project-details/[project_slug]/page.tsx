@@ -35,21 +35,18 @@ const page = async ({ params }: Props) => {
         <Content
           role={project.role}
           projectType={project.projectType}
-          team={project.team}
-          duration={project.duration}
-          categories={project.categories}
           tags={project.tags}
           year={project.year}
           techStack={project.techStack}
           overview={project.overview}
           problem={project.problem}
           solution={project.solution}
+          architectureImage={project.architectureImage}
           features={project.features}
           responsibilities={project.responsibilities}
           technicalChallenges={project.technicalChallenges}
           process={project.process}
           result={project.result}
-          impact={project.impact}
         />
         <NavigateNext nextProject={project.nextProject} />
       </main>
